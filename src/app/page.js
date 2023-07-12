@@ -22,7 +22,7 @@ import TabPanel from 'react-tabs/lib/components/TabPanel';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
-export const Logos = [
+const Logos = [
   {
     name: 'klaytn',
     src: '/images/Logos/klaytn.png',
