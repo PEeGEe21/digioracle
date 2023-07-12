@@ -1,5 +1,5 @@
 import './globals.css';
-import {michromaFont, gtWalshFont } from '@/app/fonts';
+import {michromaFont, gtWalshFont } from '../app/fonts';
 
 
 export const metadata = {
