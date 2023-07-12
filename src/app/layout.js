@@ -1,4 +1,4 @@
-import './globals.css'
+import './globals.css';
 import {michromaFont, gtWalshFont } from '@/app/fonts';
 
 
