@@ -1,7 +1,6 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import {michromaFont, gtWalshFont } from '@/app/fonts';
 
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +10,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${gtWalshFont.variable} ${gtWalshFont.className} ${michromaFont.className} ${michromaFont.variable} `}>{children}</body>
+      
     </html>
   )
 }
