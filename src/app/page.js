@@ -171,7 +171,7 @@ export default function Home() {
                   The DigiOracle Primer
                 </h2>
                 <p className="text-lg text-white font-light">
-                  DigiOracle's modular architecture enables the interdependent
+                  DigiOracle&apos;s modular architecture enables the interdependent
                   operation of data providers and nodes. Learn more about how
                   this unlocks greater efficiency and resource utilization for
                   oracle networks.
