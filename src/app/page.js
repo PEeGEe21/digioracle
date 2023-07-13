@@ -21,6 +21,7 @@ import TabList from 'react-tabs/lib/components/TabList';
 import TabPanel from 'react-tabs/lib/components/TabPanel';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import DefaultCodeBlock from './components/CodeBlocks/codeblock';
 
 const Logos = [
   {
@@ -56,6 +57,39 @@ const Logos = [
     src: '/images/Logos/vechain.png',
   },
 ];
+
+const PriceFeedText = `// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.16;
+
+import "./KlayOracleInterface.sol";
+
+contract OracleConsumerSample {
+    address public immutable oracleAddress;
+
+    uint256 public klayOutput;
+
+    constructor(address _oracleAddress) {
+        require(_oracleAddress != address(0));
+        oracleAddress = _oracleAddress;
+    }
+
+    function swapEthtoKlay() public returns (bool) {
+        KlayOracleInterface oracle = KlayOracleInterface(oracleAddress);
+
+        bool replied = oracle.newOracleRequest(
+            this.swap.selector,
+            address(this)
+        );
+
+        return replied;
+    }
+
+    function swap(uint256 _klayOutput) public {
+        klayOutput = _klayOutput;
+        //Swap eth to klay
+    }
+}`;
 
 export default function Home() {
   return (
@@ -145,10 +179,40 @@ export default function Home() {
                       </div>
                     </TabPanel>
                     <TabPanel>
-                      <div className="fade-in">isd</div>
+                      <div className="mx-auto max-w-3xl py-6 fade-in">
+                        <div className="flex items-center justify-center gap-12 flex-wrap w-full">
+                          {Logos?.map((x, i) => (
+                            <div key={i} className="h-auto w-auto">
+                              <Image
+                                src={x?.src}
+                                height={80}
+                                width={100}
+                                className="object-cover"
+                                alt={x?.name}
+                                loading={'lazy'}
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     </TabPanel>
                     <TabPanel>
-                      <div className="fade-in">checnk</div>
+                      <div className="mx-auto max-w-3xl py-6 fade-in">
+                        <div className="flex items-center justify-center gap-12 flex-wrap w-full">
+                          {Logos?.map((x, i) => (
+                            <div key={i} className="h-auto w-auto">
+                              <Image
+                                src={x?.src}
+                                height={80}
+                                width={100}
+                                className="object-cover"
+                                alt={x?.name}
+                                loading={'lazy'}
+                              />
+                            </div>
+                          ))}
+                        </div>
+                      </div>
                     </TabPanel>
                   </div>
                 </div>
@@ -249,7 +313,7 @@ export default function Home() {
 
               <div className="flex items-center justify-center md:justify-end w-full">
                 <Link
-                  href="https://klayoracle.gitbook.io/v1.0.0/"
+                  href=""
                   className="hero-button btn bg-[#11A97D] w-full md:w-auto px-10 py-4 text-center rounded-md"
                 >
                   Read Manifesto
@@ -319,29 +383,9 @@ export default function Home() {
                           >
                             <span className="flex items-center justify-start gap-3 opacity-30">
                               <span className="">
-                                <CloudSunny />
-                              </span>
-                              Weather data
-                            </span>
-
-                            <span className="text-[#0C0F0E] text-xs font-light rounded-3xl bg-[#BAFBE8] px-3 py-1 ">
-                              coming soon
-                            </span>
-                          </button>
-                        </Tab>
-                        <Tab
-                          className="w-full border-b border-[#303836]"
-                          disabled
-                        >
-                          <button
-                            className="flex items-center justify-between gap-3 text-lg py-3 px-3 w-full font-light"
-                            disabled
-                          >
-                            <span className="flex items-center justify-start gap-3 opacity-30">
-                              <span className="">
                                 <Global />
                               </span>
-                              Web APIs{' '}
+                              Real word assets
                             </span>
 
                             <span className="text-[#0C0F0E] text-xs font-light rounded-3xl bg-[#BAFBE8] px-3 py-1 ">
@@ -352,21 +396,78 @@ export default function Home() {
                       </TabList>
                     </div>
 
-                    <div className="flex flex-col lg:w-3/4 w-full">
+                    <div className="flex flex-col lg:w-3/4 w-full mt-10 md:mt-0">
                       <TabPanel>
-                        <div>ience</div>
+                        <div className="fade-in">
+                          <div className="flex items-center justify-end mx-auto max-w-4xl">
+                            <div className="flex flex-col gap-6">
+                              <DefaultCodeBlock text={PriceFeedText} />
+
+                              <div className="flex items-center justify-center w-full ">
+                                <Link
+                                  href=""
+                                  className="hero-button btn bg-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md"
+                                >
+                                  Integrate with DigiOracle
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </TabPanel>
                       <TabPanel>
-                        <div>isd</div>
+                        <div className="fade-in">
+                          <div className="flex items-center justify-end mx-auto max-w-4xl">
+                            <div className="flex flex-col gap-6">
+                              <DefaultCodeBlock text={PriceFeedText} />
+
+                              <div className="flex items-center justify-center w-full ">
+                                <Link
+                                  href=""
+                                  className="hero-button btn bg-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md"
+                                >
+                                  Integrate with DigiOracle
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </TabPanel>
                       <TabPanel>
-                        <div>fdf</div>
+                        <div className="fade-in">
+                          <div className="flex items-center justify-end mx-auto max-w-4xl">
+                            <div className="flex flex-col gap-6">
+                              <DefaultCodeBlock text={PriceFeedText} />
+
+                              <div className="flex items-center justify-center w-full ">
+                                <Link
+                                  href=""
+                                  className="hero-button btn bg-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md"
+                                >
+                                  Integrate with DigiOracle
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </TabPanel>
                       <TabPanel>
-                        <div>fefe</div>
-                      </TabPanel>
-                      <TabPanel>
-                        <div>isfefd</div>
+                        <div className="fade-in">
+                          <div className="flex items-center justify-end mx-auto max-w-4xl">
+                            <div className="flex flex-col gap-6">
+                              <DefaultCodeBlock text={PriceFeedText} />
+
+                              <div className="flex items-center justify-center w-full ">
+                                <Link
+                                  href=""
+                                  className="hero-button btn bg-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md"
+                                >
+                                  Integrate with DigiOracle
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </TabPanel>
                     </div>
                   </div>
@@ -528,7 +629,7 @@ export default function Home() {
           </div>
         </section>
 
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

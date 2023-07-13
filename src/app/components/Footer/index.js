@@ -1,9 +1,11 @@
+import { Youtube } from 'iconsax-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import Github from '../Icons/Github';
 
 const Footer = () => {
-    const date = new Date().getFullYear();
+  const date = new Date().getFullYear();
   return (
     <>
       <footer className="py-8">
@@ -68,12 +70,13 @@ const Footer = () => {
               </div>
               <div>
                 <div className="inline-flex items-center justify-start lg:justify-center gap-2">
-                  <a target="_blank" href="" className="social-icon">
-                    <i className="fab fa-github"></i>
-                  </a>
-                  <a href="" className="social-icon">
-                    <i className="fab fa-youtube"></i>
-                  </a>
+                  <Link href="/" target="_blank" className="social-icon text-[#878C91] hover:text-white">
+                    <Github />
+                  </Link>
+
+                  <Link href="/" target="_blank" className="social-icon  text-[#878C91] hover:text-white">
+                    <Youtube />
+                  </Link>
                 </div>
               </div>
             </div>
