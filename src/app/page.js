@@ -403,46 +403,46 @@ export default function Home() {
                     <div className="flex flex-col lg:w-3/4 w-full mt-10 md:mt-0">
                       <TabPanel>
                         <div className="fade-in">
-                          <div className="flex items-center justify-center mx-auto max-w-4xl">
-                            <div className="flex flex-col gap-6">
-                              <DefaultCodeBlock text={PriceFeedText} />
+                          <div className="flex items-center justify-center mx-auto max-w-4xl flex-col gap-6 w-full">
+                            {/* <div className="flex flex-col gap-6"> */}
+                            <DefaultCodeBlock text={PriceFeedText} />
 
-                              <div className="flex items-center justify-center w-full mt-3">
-                                <Link
-                                  href=""
-                                  className="btn border border-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md inline-flex gap-4 justify-center items-center"
-                                >
-                                  Integrate with DigiOracle
-                                  <ArrowCircleRight2 className="arrow" />
-                                </Link>
-                              </div>
+                            <div className="flex items-center justify-center w-full mt-3">
+                              <Link
+                                href=""
+                                className="btn border border-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md inline-flex gap-4 justify-center items-center"
+                              >
+                                Integrate with DigiOracle
+                                <ArrowCircleRight2 className="arrow" />
+                              </Link>
                             </div>
+                            {/* </div> */}
                           </div>
                         </div>
                       </TabPanel>
                       <TabPanel>
                         <div className="fade-in">
-                          <div className="flex items-center justify-center mx-auto max-w-4xl">
-                            <div className="flex flex-col gap-6">
-                              <DefaultCodeBlock text={PriceFeedText} />
+                          <div className="flex items-center justify-center mx-auto max-w-4xl flex-col gap-6 w-full">
+                            {/* <div className="flex flex-col gap-6"> */}
+                            <DefaultCodeBlock text={PriceFeedText} />
 
-                              <div className="flex items-center justify-center w-full mt-3">
-                                <Link
-                                  href=""
-                                  className="btn border border-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md inline-flex gap-4 justify-center items-center"
-                                >
-                                  Integrate with DigiOracle
-                                  <ArrowCircleRight2 className="arrow" />
-                                </Link>
-                              </div>
+                            <div className="flex items-center justify-center w-full mt-3">
+                              <Link
+                                href=""
+                                className="btn border border-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md inline-flex gap-4 justify-center items-center"
+                              >
+                                Integrate with DigiOracle
+                                <ArrowCircleRight2 className="arrow" />
+                              </Link>
                             </div>
+                            {/* </div> */}
                           </div>
                         </div>
                       </TabPanel>
                       <TabPanel>
                         <div className="fade-in">
-                          <div className="flex items-center justify-center mx-auto max-w-4xl">
-                            <div className="flex flex-col gap-6">
+                        <div className="flex items-center justify-center mx-auto max-w-4xl flex-col gap-6 w-full">
+                            {/* <div className="flex flex-col gap-6"> */}
                               <DefaultCodeBlock text={PriceFeedText} />
 
                               <div className="flex items-center justify-center w-full mt-3">
@@ -454,7 +454,7 @@ export default function Home() {
                                   <ArrowCircleRight2 className="arrow" />
                                 </Link>
                               </div>
-                            </div>
+                            {/* </div> */}
                           </div>
                         </div>
                       </TabPanel>

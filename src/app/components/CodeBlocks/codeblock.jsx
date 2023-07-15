@@ -4,7 +4,7 @@ import { atomOneDark, CodeBlock,nord } from "react-code-blocks";
 
 const DefaultCodeBlock = ({text}) => {
   return (
-    <div className='rounded-md'>
+    // <div className='rounded-md'>
 
     <CodeBlock
       text={text}
@@ -12,16 +12,16 @@ const DefaultCodeBlock = ({text}) => {
       showLineNumbers={true} 
       theme={atomOneDark}
       customStyle={{
-        width: '600px',
+        width: '100%',
         height: '450px',
         fontSize: '12px',
         borderRadius: '8px', 
-        maxWidth:'600px'
+        maxWidth:'600px',
 
-        // overflow: 'hidden',
+        overflowY: 'hidden',
       }}
     />
-    </div>
+    // </div>
   );
 };
 
