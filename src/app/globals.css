@@ -42,6 +42,12 @@ body {
   margin-left: 10px;
 }
 
+.com_links:hover .arrow {
+  /* margin-left: 2px; */
+  transform: translateZ(2px);
+  transition: all 300ms ease;
+}
+
 .cta {
   display: flex;
   align-items: center;
@@ -50,6 +56,34 @@ body {
   font-size: 20px;
   line-height: 36px;
   cursor: pointer;
+}
+
+.sec_053 .bg {
+  background: linear-gradient(148deg, #11a97d 0%, #9747ff 100%);
+}
+
+.team_card img {
+  filter: grayscale(40%);
+
+}
+
+.team_card .team_attribute {
+  border-radius: 0px 0px 16px 16px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+}
+
+.btn:hover .arrow{
+  transform: translate(10px);
+  transition: all 300ms ease-in-out;
+}
+
+.btn .arrow{
+  transition: all 300ms ease-in-out;
+}
+
+.primary--button{
+  background: linear-gradient(151deg, #9747FF 0%, #11A97D 100%);
 }
 
 /* ANIMATIONS */

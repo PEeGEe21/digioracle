@@ -1,3 +1,4 @@
+import { ArrowDown2 } from 'iconsax-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -50,21 +51,21 @@ const Navbar = () => {
 
                 <Link
                   className="block lg:inline-block py-4 px-8 rounded-[32px] bg-[#1F1F1F] text-white text-base "
-                  href="/"
+                  href="/ecosystem"
                 >
                   Ecosystem
                 </Link>
                 <Link
                   className="block lg:inline-block py-4 px-8 rounded-[32px] bg-[#1F1F1F] text-white text-base "
-                  href="/"
+                  href="/community"
                 >
                   Community
                 </Link>
                 <Link
-                  className="block lg:inline-block py-4 px-8 rounded-[32px] bg-[#1F1F1F] text-white text-base "
+                  className="block lg:inline-flex py-4 px-8 rounded-[32px] bg-[#1F1F1F] text-white text-base gap-1"
                   href=""
                 >
-                  About
+                  About <span><ArrowDown2 className='h-6 w-4'/></span>
                 </Link>
               </div>
             </div>

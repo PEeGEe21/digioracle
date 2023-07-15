@@ -29,7 +29,7 @@ const Footer = () => {
 
                   <div className="flex items-center justify-center gap-2 mt-4 flex-wrap">
                     <Link
-                      href="/"
+                      href="/developers"
                       className="footer-link rounded-circle p-3 flex items-center justify-center relative"
                     >
                       Developers
@@ -37,7 +37,7 @@ const Footer = () => {
                     </Link>
 
                     <Link
-                      href="/"
+                      href="/ecosystem"
                       className="footer-link rounded-circle p-3 flex items-center justify-center relative"
                     >
                       Ecosystem
@@ -75,7 +75,7 @@ const Footer = () => {
                   </Link>
 
                   <Link href="/" target="_blank" className="social-icon  text-[#878C91] hover:text-white">
-                    <Youtube />
+                    <Youtube fill='white' />
                   </Link>
                 </div>
               </div>

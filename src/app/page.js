@@ -2,6 +2,8 @@
 
 import {
   Arrow,
+  ArrowCircleRight,
+  ArrowCircleRight2,
   Bezier,
   CloudSunny,
   Code,
@@ -114,12 +116,13 @@ export default function Home() {
                       events, data and assets from the real world.
                     </p>
                   </div>
-                  <div className="flex md:block w-full md:w-auto ">
+                  <div className="flex md:block w-full md:w-1/2 justify-center items-center mx-auto">
                     <Link
                       href="https://klayoracle.gitbook.io/v1.0.0/"
-                      className="hero-button btn w-full border border-[#11a97d] text-white px-8 py-4 rounded"
+                      className="primary--button btn w-full text-white px-8 py-4 rounded inline-flex gap-4 justify-center items-center text-center"
                     >
                       Start Building
+                      <ArrowCircleRight2 className="arrow" />
                     </Link>
                   </div>
                 </div>
@@ -311,12 +314,13 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="flex items-center justify-center md:justify-end w-full">
+              <div className="flex items-center justify-center md:justify-end w-full z-10">
                 <Link
                   href=""
-                  className="hero-button btn bg-[#11A97D] w-full md:w-auto px-10 py-4 text-center rounded-md"
+                  className="btn bg-[#11A97D] w-full md:w-auto px-10 py-4 text-center rounded-md inline-flex gap-4 justify-center items-center"
                 >
                   Read Manifesto
+                  <ArrowCircleRight2 className="arrow" />
                 </Link>
               </div>
             </div>
@@ -399,16 +403,55 @@ export default function Home() {
                     <div className="flex flex-col lg:w-3/4 w-full mt-10 md:mt-0">
                       <TabPanel>
                         <div className="fade-in">
-                          <div className="flex items-center justify-end mx-auto max-w-4xl">
+                          <div className="flex items-center justify-center mx-auto max-w-4xl">
                             <div className="flex flex-col gap-6">
                               <DefaultCodeBlock text={PriceFeedText} />
 
-                              <div className="flex items-center justify-center w-full ">
+                              <div className="flex items-center justify-center w-full mt-3">
                                 <Link
                                   href=""
-                                  className="hero-button btn bg-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md"
+                                  className="btn border border-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md inline-flex gap-4 justify-center items-center"
                                 >
                                   Integrate with DigiOracle
+                                  <ArrowCircleRight2 className="arrow" />
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </TabPanel>
+                      <TabPanel>
+                        <div className="fade-in">
+                          <div className="flex items-center justify-center mx-auto max-w-4xl">
+                            <div className="flex flex-col gap-6">
+                              <DefaultCodeBlock text={PriceFeedText} />
+
+                              <div className="flex items-center justify-center w-full mt-3">
+                                <Link
+                                  href=""
+                                  className="btn border border-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md inline-flex gap-4 justify-center items-center"
+                                >
+                                  Integrate with DigiOracle
+                                  <ArrowCircleRight2 className="arrow" />
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </TabPanel>
+                      <TabPanel>
+                        <div className="fade-in">
+                          <div className="flex items-center justify-center mx-auto max-w-4xl">
+                            <div className="flex flex-col gap-6">
+                              <DefaultCodeBlock text={PriceFeedText} />
+
+                              <div className="flex items-center justify-center w-full mt-3">
+                                <Link
+                                  href=""
+                                  className="btn border border-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md inline-flex gap-4 justify-center items-center"
+                                >
+                                  Integrate with DigiOracle
+                                  <ArrowCircleRight2 className="arrow" />
                                 </Link>
                               </div>
                             </div>
@@ -421,48 +464,13 @@ export default function Home() {
                             <div className="flex flex-col gap-6">
                               <DefaultCodeBlock text={PriceFeedText} />
 
-                              <div className="flex items-center justify-center w-full ">
+                              <div className="flex items-center justify-center w-full mt-3">
                                 <Link
                                   href=""
-                                  className="hero-button btn bg-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md"
+                                  className=" btn border border-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md"
                                 >
                                   Integrate with DigiOracle
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </TabPanel>
-                      <TabPanel>
-                        <div className="fade-in">
-                          <div className="flex items-center justify-end mx-auto max-w-4xl">
-                            <div className="flex flex-col gap-6">
-                              <DefaultCodeBlock text={PriceFeedText} />
-
-                              <div className="flex items-center justify-center w-full ">
-                                <Link
-                                  href=""
-                                  className="hero-button btn bg-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md"
-                                >
-                                  Integrate with DigiOracle
-                                </Link>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </TabPanel>
-                      <TabPanel>
-                        <div className="fade-in">
-                          <div className="flex items-center justify-end mx-auto max-w-4xl">
-                            <div className="flex flex-col gap-6">
-                              <DefaultCodeBlock text={PriceFeedText} />
-
-                              <div className="flex items-center justify-center w-full ">
-                                <Link
-                                  href=""
-                                  className="hero-button btn bg-[#11A97D] w-full md:w-auto px-10 py-3 text-center rounded-md"
-                                >
-                                  Integrate with DigiOracle
+                                  <ArrowCircleRight2 className="arrow" />
                                 </Link>
                               </div>
                             </div>
@@ -526,18 +534,20 @@ export default function Home() {
                   <Code1 className="h-[100px] w-[100px]" />
                 </div>
                 <div className="card-body my-4 flex flex-col gap-8 ">
-                  <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 text-white ">
+                  <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 text-white md:h-20">
                     DigiOracle For Developers
                   </h5>
-                  <Link
-                    href="/"
-                    className="text-base font-light text-[#96FADD] cta-link"
-                  >
-                    Explore{' '}
-                    <span className="cta-icon_animate transition-all duration-150 ease-in-out">
-                      &gt;&gt;
-                    </span>
-                  </Link>
+                  <div>
+                    <Link
+                      href="/"
+                      className="text-base font-light text-[#96FADD] cta-link"
+                    >
+                      Explore{' '}
+                      <span className="cta-icon_animate transition-all duration-150 ease-in-out">
+                        &gt;&gt;
+                      </span>
+                    </Link>
+                  </div>
                 </div>
                 <Image
                   src="/images/Vector 1.svg"
@@ -553,18 +563,20 @@ export default function Home() {
                   <Bezier className="h-[100px] w-[100px]" />
                 </div>
                 <div className="card-body my-4 flex flex-col gap-8 justify-end">
-                  <h5 className="text-[30px] leading-[40px] w-full md:w-3/4">
+                  <h5 className="text-[30px] leading-[40px] w-full md:w-3/4  md:h-20">
                     For Nodes & Data Providers
                   </h5>
-                  <Link
-                    href="/"
-                    className="text-base font-light text-[#96FADD] cta-link"
-                  >
-                    Explore{' '}
-                    <span className="cta-icon_animate transition-all duration-150 ease-in-out">
-                      &gt;&gt;
-                    </span>
-                  </Link>
+                  <div>
+                    <Link
+                      href="/"
+                      className="text-base font-light text-[#96FADD] cta-link"
+                    >
+                      Explore{' '}
+                      <span className="cta-icon_animate transition-all duration-150 ease-in-out">
+                        &gt;&gt;
+                      </span>
+                    </Link>
+                  </div>
                 </div>
                 <Image
                   src="/images/Vector 2.svg"
@@ -580,18 +592,20 @@ export default function Home() {
                   <People className="h-[100px] w-[100px]" />
                 </div>
                 <div className="card-body my-4 flex flex-col gap-8 justify-end">
-                  <h5 className="text-[30px] leading-[40px] w-full md:w-3/4">
+                  <h5 className="text-[30px] leading-[40px] w-full md:w-3/4  md:h-20">
                     For Community
                   </h5>
-                  <Link
-                    href="/"
-                    className="text-base font-light text-[#96FADD] cta-link"
-                  >
-                    Explore{' '}
-                    <span className="cta-icon_animate transition-all duration-150 ease-in-out">
-                      &gt;&gt;
-                    </span>
-                  </Link>
+                  <div>
+                    <Link
+                      href="/"
+                      className="text-base font-light text-[#96FADD] cta-link"
+                    >
+                      Explore{' '}
+                      <span className="cta-icon_animate transition-all duration-150 ease-in-out">
+                        &gt;&gt;
+                      </span>
+                    </Link>
+                  </div>
                 </div>
                 <Image
                   src="/images/Vector 3.svg"

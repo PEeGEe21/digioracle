@@ -15,9 +15,9 @@ const DefaultCodeBlock = ({text}) => {
         width: '600px',
         height: '450px',
         fontSize: '12px',
-        borderRadius: '8px'
+        borderRadius: '8px', 
 
-        // overflowY: 'scroll',
+        overflow: 'hidden',
       }}
     />
     </div>

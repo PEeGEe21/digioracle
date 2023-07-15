@@ -10,49 +10,11 @@ import TabList from 'react-tabs/lib/components/TabList';
 import TabPanel from 'react-tabs/lib/components/TabPanel';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import Feed from '../components/Icons/Feeds';
-import Github from '../components/Icons/Github';
-import {
-  DocumentText,
-  Headphone,
-  MessageQuestion,
-  TableDocument,
-} from 'iconsax-react';
 
-const Resources = [
-  {
-    icon: <DocumentText />,
-    title: 'Documentation',
-    subtext: 'Dive into the docs',
-  },
-  {
-    icon: <MessageQuestion />,
-    title: 'Developer FAQs',
-    subtext: 'Frequently asked questions',
-  },
-  {
-    icon: <Headphone />,
-    title: 'Developer Support',
-    subtext: 'For questions, issues and help',
-  },
-  {
-    icon: <Feed/>,
-    title: 'Data Feed Explorer',
-    subtext: 'Explore the current status of the network',
-  },
-  {
-    icon: <Github/>,
-    title: 'GitHub Repo',
-    subtext: 'Explore the codebase',
-  },
-  {
-    icon: <TableDocument />,
-    title: 'The DigiOracle Manifesto',
-    subtext: 'Learn more about how DigiOracle works',
-  },
-];
+import { resources } from '../utils/data';
+import { ArrowCircleRight2 } from 'iconsax-react';
 
-const index = () => {
+const Developers = () => {
   return (
     <div className="font-gtwalsh space-y-6">
       <div>
@@ -77,6 +39,22 @@ const index = () => {
               </div>
             </div>
           </div>
+
+          <Image
+            src="/images/blue-green-wave-with-grid-lines-lines 1.png"
+            className="w-100 object-contain object-left -z-10"
+            fill
+            alt="heroimg"
+            loading={'lazy'}
+          />
+
+          <Image
+            src="/images/blue-green-wave-with-grid-lines-lines 2.png"
+            className="w-100 object-contain object-right -z-10"
+            fill
+            alt="heroimg"
+            loading={'lazy'}
+          />
         </section>
       </div>
 
@@ -91,7 +69,7 @@ const index = () => {
 
             <div className="pt-4 px-3">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-5 gap-y-8">
-                {Resources?.map((item, i) => (
+                {resources?.map((item, i) => (
                   <div
                     className="card border border-[#2C2929] p-5 backdrop-filter backdrop-blur-xs rounded-lg"
                     key={i}
@@ -192,7 +170,7 @@ const index = () => {
                       src="/images/blue-green-wave-with-grid-lines-lines 1 (2).svg"
                       className="object-cover rounded-t-lg"
                       fill
-                      alt="Frame1" 
+                      alt="Frame1"
                       loading={'lazy'}
                     />
                   </div>
@@ -231,12 +209,13 @@ const index = () => {
               </p>
             </div>
 
-            <div className="flex items-center justify-center md:justify-end w-full">
+            <div className="flex items-center justify-center md:justify-end w-full z-10">
               <Link
                 href=""
-                className="hero-button btn bg-[#11A97D] w-full md:w-auto px-10 py-4 text-center rounded-md"
+                className="btn bg-[#11A97D] w-full md:w-auto px-10 py-4 text-center rounded-md inline-flex gap-4 justify-center items-center"
               >
                 Talk to us
+                <ArrowCircleRight2 className="arrow" />
               </Link>
             </div>
           </div>
@@ -255,4 +234,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Developers;
