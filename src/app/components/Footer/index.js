@@ -44,14 +44,14 @@ const Footer = () => {
                       <span></span>
                     </Link>
                     <Link
-                      href=""
+                      href="/community"
                       className="footer-link rounded-circle p-3 flex items-center justify-center relative"
                     >
                       Community
                       <span></span>
                     </Link>
                     <Link
-                      href=""
+                      href="/about/company"
                       className="footer-link rounded-circle p-3 flex items-center justify-center relative"
                     >
                       About
