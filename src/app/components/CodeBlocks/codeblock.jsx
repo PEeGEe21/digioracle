@@ -13,8 +13,8 @@ const DefaultCodeBlock = ({text}) => {
       theme={atomOneDark}
       customStyle={{
         width: '100%',
-        height: '450px',
-        fontSize: '12px',
+        height: '568px',
+        fontSize: '16px',
         borderRadius: '8px', 
         maxWidth:'600px',
 
