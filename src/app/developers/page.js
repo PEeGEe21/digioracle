@@ -67,7 +67,7 @@ const Developers = () => {
               Connect your smart contracts
               </h2>
               <p className="text-lg text-white font-light text-center">
-              With DigiOracle's intuitive APIs and developer-friendly documentation, integrating our oracle into your projects is straightforward and hassle-free.
+              With DigiOracle&apos;s intuitive APIs and developer-friendly documentation, integrating our oracle into your projects is straightforward and hassle-free.
               </p>
             </div>
             <div className="mt-5">
