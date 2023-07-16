@@ -13,6 +13,7 @@ import Footer from '../components/Footer';
 
 import { resources } from '../utils/data';
 import { ArrowCircleRight2 } from 'iconsax-react';
+import DevelopersTab from '../components/Tabs/developersTab';
 
 const Developers = () => {
   return (
@@ -58,6 +59,24 @@ const Developers = () => {
         </section>
       </div>
 
+      <section className="py-[7rem] sec_026 dev_tab">
+        <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
+          <div className="py-5">
+            <div className="mb-9 flex flex-col gap-4 pb-4 max-w-4xl mx-auto">
+              <h2 className="text-center font-semibold font-michroma text-[40px] text-white">
+              Connect your smart contracts
+              </h2>
+              <p className="text-lg text-white font-light text-center">
+              With DigiOracle's intuitive APIs and developer-friendly documentation, integrating our oracle into your projects is straightforward and hassle-free.
+              </p>
+            </div>
+            <div className="mt-5">
+              <DevelopersTab/>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-[7rem] sec_022">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
@@ -95,6 +114,7 @@ const Developers = () => {
         </div>
       </section>
 
+      
       <section className="py-[7rem] sec_026">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
