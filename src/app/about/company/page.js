@@ -49,7 +49,7 @@ const Company = () => {
         </div>
       </div>
 
-      <section className="py-[7rem] sec_022">
+      <section className="py-[4em] sec_022">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9">
@@ -74,7 +74,7 @@ const Company = () => {
                         href="/"
                         className="btn px-6 py-3 text-white bg-[#11A97D] rounded-md inline-flex gap-4 justify-center items-center"
                       >
-                        Coming soon 
+                        Coming soon
                         <ArrowCircleRight2 className="arrow" />
                       </Link>
                     </div>
@@ -90,11 +90,11 @@ const Company = () => {
                     </p>
 
                     <div className="mt-4 py-2">
-                    <Link
+                      <Link
                         href="/"
                         className="btn px-6 py-3 text-white bg-[#11A97D] rounded-md inline-flex gap-4 justify-center items-center"
                       >
-                        Coming soon 
+                        Coming soon
                         <ArrowCircleRight2 className="arrow" />
                       </Link>
                     </div>
@@ -110,11 +110,11 @@ const Company = () => {
                     </p>
 
                     <div className="mt-4 py-2">
-                    <Link
+                      <Link
                         href="/"
                         className="btn px-6 py-3 text-white bg-[#11A97D] rounded-md inline-flex gap-4 justify-center items-center"
                       >
-                        Coming soon 
+                        Coming soon
                         <ArrowCircleRight2 className="arrow" />
                       </Link>
                     </div>
@@ -126,12 +126,12 @@ const Company = () => {
         </div>
       </section>
 
-      <section className="py-[7rem] sec_022">
+      <section className="py-[4em] sec_022">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-12">
               <h2 className="text-center font-semibold font-michroma text-[40px] text-white">
-              Meet the Team
+                Meet the Team
               </h2>
             </div>
             <div className="pt-4 px-3 ">
@@ -210,7 +210,7 @@ const Company = () => {
         </div>
       </section>
 
-      <div className="px-4 sec_023 py-[7rem]">
+      <div className="px-4 sec_023 py-[4em]">
         <div className="rounded-3xl bg-[#0D1A1A] container mx-auto max-w-7xl relative h-full w-full block">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4  py-12 px-5 md:py-14 md:px-20">
             <div className="flex flex-col gap-4 text-center md:text-left">
@@ -226,9 +226,8 @@ const Company = () => {
                 href=""
                 className=" btn bg-[#11A97D] w-full md:w-auto px-10 py-4 text-center rounded-md inline-flex gap-4 justify-center items-center"
               >
-                View open roles 
+                View open roles
                 <ArrowCircleRight2 className="arrow" />
-
               </Link>
             </div>
           </div>
@@ -242,7 +241,7 @@ const Company = () => {
         </div>
       </div>
 
-      <section className="py-[7rem] bg-[#131414]">
+      <section className="py-[4em] bg-[#131414]">
         <div className="container mx-auto max-w-7xl py-12 px-5 md:py-12 md:px-20 ">
           <div className="">
             <div className="mb-9">

@@ -322,104 +322,103 @@ const Community = () => {
         </div>
       </section>
 
-      <section className="py-[7rem]">
-          <div className="container mx-auto max-w-7xl px-4">
-            <div className="mb-5">
-              <h2 className="font-michroma text-center text-[40px] text-white mb-5">
-                Explore The DigiOracle Ecosystem
-              </h2>
+      <section className="py-[4em]">
+        <div className="container mx-auto max-w-7xl px-4">
+          <div className="mb-5">
+            <h2 className="font-michroma text-center text-[40px] text-white mb-5">
+              Explore The DigiOracle Ecosystem
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 mt-10">
+            <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
+              <div className="card-img flex items-center justify-center py-5 mb-12">
+                <Code1 className="h-[100px] w-[100px]" variant='Bulk' />
+              </div>
+              <div className="card-body my-4 flex flex-col gap-8 ">
+                <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 text-white md:h-20">
+                  DigiOracle For Developers
+                </h5>
+                <div>
+                  <Link
+                    href="/"
+                    className="text-base font-light text-[#96FADD] cta-link"
+                  >
+                    Explore{' '}
+                    <span className="cta-icon_animate transition-all duration-150 ease-in-out">
+                      &gt;&gt;
+                    </span>
+                  </Link>
+                </div>
+              </div>
+              <Image
+                src="/images/Vector 1.svg"
+                fill
+                className="absolute right-0 bottom-0 pointer-events-none object-contain object-bottom -z-10"
+                alt="Vector1"
+                loading={'lazy'}
+              />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 mt-10">
-              <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
-                <div className="card-img flex items-center justify-center py-5 mb-12">
-                  <Code1 className="h-[100px] w-[100px]" />
-                </div>
-                <div className="card-body my-4 flex flex-col gap-8 ">
-                  <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 text-white md:h-20">
-                    DigiOracle For Developers
-                  </h5>
-                  <div>
-                    <Link
-                      href="/"
-                      className="text-base font-light text-[#96FADD] cta-link"
-                    >
-                      Explore{' '}
-                      <span className="cta-icon_animate transition-all duration-150 ease-in-out">
-                        &gt;&gt;
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-                <Image
-                  src="/images/Vector 1.svg"
-                  fill
-                  className="absolute right-0 bottom-0 pointer-events-none object-contain object-bottom -z-10"
-                  alt="Vector1"
-                  loading={'lazy'}
-                />
-              </div>
 
-              <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
-                <div className="card-img flex items-center justify-center py-5 mb-12">
-                  <Bezier className="h-[100px] w-[100px]" />
-                </div>
-                <div className="card-body my-4 flex flex-col gap-8 justify-end">
-                  <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 md:h-20">
-                    For Nodes & Data Providers
-                  </h5>
-                  <div>
-                    <Link
-                      href="/"
-                      className="text-base font-light text-[#96FADD] cta-link"
-                    >
-                      Explore{' '}
-                      <span className="cta-icon_animate transition-all duration-150 ease-in-out">
-                        &gt;&gt;
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-                <Image
-                  src="/images/Vector 2.svg"
-                  fill
-                  className="absolute left-0 bottom-0 pointer-events-none object-contain object-bottom -z-10"
-                  alt="Vector2"
-                  loading={'lazy'}
-                />
+            <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
+              <div className="card-img flex items-center justify-center py-5 mb-12">
+                <Bezier className="h-[100px] w-[100px]" variant='Bulk' />
               </div>
+              <div className="card-body my-4 flex flex-col gap-8 justify-end">
+                <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 md:h-20">
+                  For Nodes & Data Providers
+                </h5>
+                <div>
+                  <Link
+                    href="/"
+                    className="text-base font-light text-[#96FADD] cta-link"
+                  >
+                    Explore{' '}
+                    <span className="cta-icon_animate transition-all duration-150 ease-in-out">
+                      &gt;&gt;
+                    </span>
+                  </Link>
+                </div>
+              </div>
+              <Image
+                src="/images/Vector 2.svg"
+                fill
+                className="absolute left-0 bottom-0 pointer-events-none object-contain object-bottom -z-10"
+                alt="Vector2"
+                loading={'lazy'}
+              />
+            </div>
 
-              <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
-                <div className="card-img flex items-center justify-center py-5 mb-12">
-                  <People className="h-[100px] w-[100px]" />
-                </div>
-                <div className="card-body my-4 flex flex-col gap-8 justify-end">
-                  <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 md:h-20">
-                    For Community
-                  </h5>
-                  <div>
-                    <Link
-                      href="/"
-                      className="text-base font-light text-[#96FADD] cta-link"
-                    >
-                      Explore{' '}
-                      <span className="cta-icon_animate transition-all duration-150 ease-in-out">
-                        &gt;&gt;
-                      </span>
-                    </Link>
-                  </div>
-                </div>
-                <Image
-                  src="/images/Vector 3.svg"
-                  fill
-                  className="absolute right-0 bottom-0 pointer-events-none object-contain object-bottom -z-10"
-                  alt="Vector3"
-                  loading={'lazy'}
-                />
+            <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
+              <div className="card-img flex items-center justify-center py-5 mb-12">
+                <People className="h-[100px] w-[100px]" variant='Bulk'/>
               </div>
-             
+              <div className="card-body my-4 flex flex-col gap-8 justify-end">
+                <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 md:h-20">
+                  For Community
+                </h5>
+                <div>
+                  <Link
+                    href="/"
+                    className="text-base font-light text-[#96FADD] cta-link"
+                  >
+                    Explore{' '}
+                    <span className="cta-icon_animate transition-all duration-150 ease-in-out">
+                      &gt;&gt;
+                    </span>
+                  </Link>
+                </div>
+              </div>
+              <Image
+                src="/images/Vector 3.svg"
+                fill
+                className="absolute right-0 bottom-0 pointer-events-none object-contain object-bottom -z-10"
+                alt="Vector3"
+                loading={'lazy'}
+              />
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
       <Footer />
     </div>

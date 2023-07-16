@@ -13,7 +13,9 @@ import {
   MouseCircle,
   People,
   Shuffle,
+  TickCircle,
   Wifi,
+  Clock
 } from 'iconsax-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -26,38 +28,100 @@ import Footer from './components/Footer';
 import DefaultCodeBlock from './components/CodeBlocks/codeblock';
 import HomeTab from './components/Tabs/homeTab';
 
-const Logos = [
+const SupportedChainsLogos = [
+  {
+    name: 'klaytn',
+    src: '/images/Logos/klaytn.png',
+    is_available: true,
+  },
+  {
+    name: 'celo',
+    src: '/images/Logos/celo.png',
+    is_available: false,
+  },
+  {
+    name: 'binance',
+    src: '/images/Logos/binance.png',
+    is_available: false,
+  },
+  {
+    name: 'polygon',
+    src: '/images/Logos/polygon.png',
+    is_available: false,
+  },
+  {
+    name: 'tron',
+    src: '/images/Logos/tron.png',
+    is_available: false,
+  },
+  {
+    name: 'optimism',
+    src: '/images/Logos/optimism.png',
+    is_available: false,
+  },
+  {
+    name: 'arb',
+    src: '/images/Logos/arb.png',
+    is_available: false,
+  },
+  {
+    name: 'vechain',
+    src: '/images/Logos/vechain.png',
+    is_available: false,
+  },
+];
+
+const PartnersLogos = [
   {
     name: 'klaytn',
     src: '/images/Logos/klaytn.png',
   },
   {
-    name: 'celo',
-    src: '/images/Logos/celo.png',
+    name: 'dorahacks',
+    src: '/images/Logos/dorahacks.png',
+  },
+];
+
+const DataProvidersLogos = [
+  {
+    name: 'coinmarketcap',
+    src: '/images/Logos/CM.png',
+  },
+  {
+    name: 'coinbase',
+    src: '/images/Logos/CB.png',
+  },
+  {
+    name: 'cryptocompare',
+    src: '/images/Logos/CC.svg',
   },
   {
     name: 'binance',
     src: '/images/Logos/binance.png',
   },
   {
+    name: 'huobi',
+    src: '/images/Logos/HU.svg',
+  },
+  {
+    name: 'bitmart',
+    src: '/images/Logos/BM.png',
+  },
+  {
+    name: 'uniswap',
+    src: '/images/Logos/uniswap.svg',
+  },
+  {
+    name: 'sushiswap',
+    src: '/images/Logos/Sushiswap-white-logo 1.svg',
+  },
+  {
     name: 'polygon',
     src: '/images/Logos/polygon.png',
   },
   {
-    name: 'tron',
-    src: '/images/Logos/tron.png',
-  },
-  {
-    name: 'optimism',
-    src: '/images/Logos/optimism.png',
-  },
-  {
-    name: 'arb',
-    src: '/images/Logos/arb.png',
-  },
-  {
-    name: 'vechain',
-    src: '/images/Logos/vechain.png',
+    name: 'coinapi',
+    src: '/images/Logos/coinapi.png',
   },
 ];
 
@@ -132,7 +196,7 @@ export default function Home() {
           </section>
         </div>
 
-        <section className="py-[7rem] sec_021">
+        <section className="py-[4em] sec_021">
           <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full next_level">
             <div className=" w-full  mt-3 md:mt-0 rounded fade-in relative py-6">
               <Tabs>
@@ -167,13 +231,42 @@ export default function Home() {
                     <TabPanel>
                       <div className="mx-auto max-w-3xl py-6 fade-in">
                         <div className="flex items-center justify-center gap-12 flex-wrap w-full">
-                          {Logos?.map((x, i) => (
-                            <div key={i} className="h-auto w-auto">
+                          {SupportedChainsLogos?.map((x, i) => (
+                            <div key={i} className="h-auto w-auto relative flex items-center gap-1">
                               <Image
                                 src={x?.src}
                                 height={80}
                                 width={100}
                                 className="object-cover"
+                                alt={x?.name}
+                                loading={'lazy'}
+                              />
+
+                              {x?.is_available ? (
+                                <TickCircle
+                                  color="#96FADD"
+                                  variant="Bold"
+                                  size={12}
+                                  className="absolute -right-2 top-0"
+                                />
+                              ) : (
+                                <Clock size={12} className="" color='#979797' />
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    </TabPanel>
+                    <TabPanel>
+                      <div className="mx-auto max-w-3xl py-6 fade-in">
+                        <div className="flex items-center justify-center gap-12 flex-wrap w-full">
+                          {PartnersLogos?.map((x, i) => (
+                            <div key={i} className="h-auto w-auto">
+                              <Image
+                                src={x?.src}
+                                height={100}
+                                width={120}
+                                className="object-contain"
                                 alt={x?.name}
                                 loading={'lazy'}
                               />
@@ -185,31 +278,13 @@ export default function Home() {
                     <TabPanel>
                       <div className="mx-auto max-w-3xl py-6 fade-in">
                         <div className="flex items-center justify-center gap-12 flex-wrap w-full">
-                          {Logos?.map((x, i) => (
+                          {DataProvidersLogos?.map((x, i) => (
                             <div key={i} className="h-auto w-auto">
                               <Image
                                 src={x?.src}
-                                height={80}
-                                width={100}
-                                className="object-cover"
-                                alt={x?.name}
-                                loading={'lazy'}
-                              />
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </TabPanel>
-                    <TabPanel>
-                      <div className="mx-auto max-w-3xl py-6 fade-in">
-                        <div className="flex items-center justify-center gap-12 flex-wrap w-full">
-                          {Logos?.map((x, i) => (
-                            <div key={i} className="h-auto w-auto">
-                              <Image
-                                src={x?.src}
-                                height={80}
-                                width={100}
-                                className="object-cover"
+                                height={100}
+                                width={120}
+                                className="object-contain"
                                 alt={x?.name}
                                 loading={'lazy'}
                               />
@@ -225,7 +300,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-[7rem] sec_022">
+        <section className="py-[4em] sec_022">
           <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full next_level">
             <div className="py-14">
               <div className="mb-9">
@@ -335,7 +410,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="py-[7rem] sec_024">
+        <section className="py-[4em] sec_024">
           <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full next_level">
             <div className="py-14">
               <div className="mb-9 py-8 flex flex-col gap-4">
@@ -349,13 +424,13 @@ export default function Home() {
               </div>
 
               <div className=" w-full  mt-3 md:mt-10 rounded fade-in relative py-6">
-                <HomeTab/>
+                <HomeTab />
               </div>
             </div>
           </div>
         </section>
 
-        <section className="py-[7rem] bg-[#131414]">
+        <section className="py-[4em] bg-[#131414]">
           <div className="container mx-auto max-w-7xl py-12 px-5 md:py-20 md:px-20 ">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 items-center space-y-3">
               <div className="flex flex-col gap-4">
@@ -391,7 +466,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-[7rem]">
+        <section className="py-[4em]">
           <div className="container mx-auto max-w-7xl px-4">
             <div className="mb-5">
               <h2 className="font-michroma text-center text-[40px] text-white mb-5">
@@ -401,7 +476,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3  lg:grid-cols-3 gap-8 mt-10">
               <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
                 <div className="card-img flex items-center justify-center py-5 mb-12">
-                  <Code1 className="h-[100px] w-[100px]" />
+                  <Code1 className="h-[100px] w-[100px]" variant='Bulk'/>
                 </div>
                 <div className="card-body my-4 flex flex-col gap-8 ">
                   <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 text-white md:h-20">
@@ -430,7 +505,7 @@ export default function Home() {
 
               <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
                 <div className="card-img flex items-center justify-center py-5 mb-12">
-                  <Bezier className="h-[100px] w-[100px]" />
+                  <Bezier className="h-[100px] w-[100px]" variant='Bulk'/>
                 </div>
                 <div className="card-body my-4 flex flex-col gap-8 justify-end">
                   <h5 className="text-[30px] leading-[40px] w-full md:w-3/4  md:h-20">
@@ -459,7 +534,7 @@ export default function Home() {
 
               <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
                 <div className="card-img flex items-center justify-center py-5 mb-12">
-                  <People className="h-[100px] w-[100px]" />
+                  <People className="h-[100px] w-[100px]" variant='Bulk'/>
                 </div>
                 <div className="card-body my-4 flex flex-col gap-8 justify-end">
                   <h5 className="text-[30px] leading-[40px] w-full md:w-3/4  md:h-20">

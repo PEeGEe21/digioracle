@@ -43,7 +43,7 @@ const Ecosystem = () => {
         </section>
       </div>
 
-      <section className="py-[7rem] sec_022">
+      <section className="py-[4em] sec_022">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9">
@@ -154,7 +154,7 @@ const Ecosystem = () => {
         </div>
       </section>
 
-      <section className="py-[7rem] sec_022">
+      <section className="py-[4em] sec_022">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9">
@@ -191,7 +191,7 @@ const Ecosystem = () => {
         </div>
       </section>
 
-      <section className="py-[7rem] sec_026">
+      <section className="py-[4em] sec_026">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9 flex flex-col gap-4 pb-4">
@@ -293,7 +293,7 @@ const Ecosystem = () => {
         </div>
       </section>
 
-      <div className="px-4 sec_023 py-[7rem]">
+      <div className="px-4 sec_023 py-[4em]">
         <div className="rounded-3xl bg-[#0D1A1A] container mx-auto max-w-7xl relative h-full w-full block">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4  py-12 px-5 md:py-14 md:px-20">
             <div className="flex flex-col gap-4 text-center md:text-left">

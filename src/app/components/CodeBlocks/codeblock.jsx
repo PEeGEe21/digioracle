@@ -16,7 +16,7 @@ const DefaultCodeBlock = ({text}) => {
         height: '568px',
         fontSize: '16px',
         borderRadius: '8px', 
-        maxWidth:'600px',
+        maxWidth:'700px',
 
         overflowY: 'hidden',
       }}
