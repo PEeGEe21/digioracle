@@ -1,5 +1,5 @@
 import React from 'react';
-import { atomOneDark, CodeBlock,nord } from "react-code-blocks";
+import { atomOneDark, CodeBlock,dracula,nord } from "react-code-blocks";
 
 
 const DefaultCodeBlock = ({text}) => {
@@ -8,9 +8,9 @@ const DefaultCodeBlock = ({text}) => {
 
     <CodeBlock
       text={text}
-      language="solidity"
+      language="javascript"
       showLineNumbers={true} 
-      theme={atomOneDark}
+      theme={dracula}
       customStyle={{
         width: '100%',
         height: '568px',
