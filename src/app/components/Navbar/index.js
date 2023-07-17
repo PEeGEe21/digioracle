@@ -13,7 +13,7 @@ import { Dropdown, Space } from 'antd';
 const items = [
   {
     label: (
-      <Link href="/about/why-us">
+      <Link href="/">
         Why DigiOracle?
       </Link>
     ),
@@ -31,6 +31,8 @@ const items = [
 
 const Navbar = () => {
   const { toggle, showMenu } = useContext(MenuContext) || {};
+
+  console.log(showMenu, 'showMenu');
   return (
     <>
       <header className={`shadow-header w-full bg-transparent z-50 `}>
@@ -68,7 +70,7 @@ const Navbar = () => {
               </button>
             </div>
             <div className="hidden lg:order-2 lg:block w-full lg:w-auto lg:text-center">
-              <div className="navbar-menu flex items-center justify-end md:gap-8 lg:gap-9">
+              <div className="navbar-menu flex items-center justify-end md:gap-8 lg:gap-9 font-outfit">
                 <Link
                   href="/developers"
                   className="block lg:inline-block py-4 px-8 rounded-[32px] bg-[#1F1F1F] text-white text-base"
@@ -88,10 +90,10 @@ const Navbar = () => {
                 >
                   Community
                 </Link>
-                <Dropdown menu={{ items }}>
+                <Dropdown menu={{ items }} className='font-outfit'>
                   <button
                     onClick={(e) => e.preventDefault()}
-                    className="block lg:inline-flex py-4 px-8 rounded-[32px] bg-[#1F1F1F] text-white text-base gap-1"
+                    className="block lg:inline-flex py-4 px-8 rounded-[32px] bg-[#1F1F1F] text-white text-base gap-1 font-outfit"
                   >
                     <Space>
                       About

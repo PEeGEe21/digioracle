@@ -306,14 +306,14 @@ const Ecosystem = () => {
             </div>
 
             <div className="flex items-center justify-center md:justify-end w-full z-10">
-              <Link
-                href=""
+              <a
+                href="mailto:info@klayoracle.com"
                 className="hero-button btn bg-[#11A97D] w-full md:w-auto px-10 py-4 text-center rounded-md inline-flex gap-4 justify-center items-center"
               >
                 Talk to us
                 <ArrowCircleRight2 className="arrow" />
 
-              </Link>
+              </a>
             </div>
           </div>
           <Image

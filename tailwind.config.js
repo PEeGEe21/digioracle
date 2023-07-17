@@ -13,6 +13,7 @@ module.exports = {
       fontFamily: {
         gtwalsh: ['var(--font-gtwalsh)'],
         michroma: ['var(--font-michroma)'],
+        outfit: ['var(--font-outfit)']
       },
     },
   },

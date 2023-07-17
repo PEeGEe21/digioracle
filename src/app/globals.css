@@ -95,6 +95,9 @@ body {
   color: #ffffff !important;
   padding: 12px 9px !important;
 }
+.ant-dropdown-menu .ant-dropdown-menu-item:hover {
+  background: #131414 !important;
+}
 
 /* ANIMATIONS */
 .cta-icon_animate {

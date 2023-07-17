@@ -261,7 +261,7 @@ const Company = () => {
               />
 
               <Image
-                src={'/images/Logos/klaytn.png'}
+                src={'/images/Logos/dorahacks.png'}
                 height={100}
                 width={120}
                 className="object-cover"

@@ -32,4 +32,18 @@ export const michromaFont = localFont({
   variable: "--font-michroma",
 });
 
+export const outfitFont = localFont({
+  src: [
+    {
+      path: "./Outfit/Outfit-Regular.ttf",
+      weight: "400",
+    },
+    {
+      path: "./Outfit/Outfit-Medium.ttf",
+      weight: "500",
+    }
+  ],
+  variable: "--font-outfit",
+});
+
 
