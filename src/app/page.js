@@ -28,6 +28,7 @@ import Footer from './components/Footer';
 import DefaultCodeBlock from './components/CodeBlocks/codeblock';
 import HomeTab from './components/Tabs/homeTab';
 
+
 const SupportedChainsLogos = [
   {
     name: 'klaytn',

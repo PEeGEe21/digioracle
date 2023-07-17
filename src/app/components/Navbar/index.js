@@ -1,15 +1,39 @@
+'use client';
+
+import { MenuContext } from '@/app/utils/context';
 import { ArrowDown2 } from 'iconsax-react';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useContext, useState } from 'react';
+import { Dropdown, Space } from 'antd';
+// import { DownOutlined } from '@ant-design/icons';
+
 // import navbarLogo from '/images/Logo.png'
 
+const items = [
+  {
+    label: (
+      <Link href="/about/why-us">
+        Why DigiOracle?
+      </Link>
+    ),
+    key: '1',
+  },
+  {
+    label: (
+      <Link href="/about/company">
+        Company
+      </Link>
+    ),
+    key: '2',
+  },
+];
+
 const Navbar = () => {
+  const { toggle, showMenu } = useContext(MenuContext) || {};
   return (
     <>
-      <header
-        className={`shadow-header w-full bg-transparent z-50 `}
-      >
+      <header className={`shadow-header w-full bg-transparent z-50 `}>
         <div className="container mx-auto max-w-7xl py-5">
           <nav className="flex items-center justify-between px-3 lg:px-6 py-4 whitespace-nowrap text-sm">
             <div className=" lg:order-1 w-auto lg:w-1/4 lg:text-center">
@@ -29,7 +53,10 @@ const Navbar = () => {
 
             <div className="lg:order-2 w-auto lg:w-1/4 lg:text-center"></div>
             <div className="block lg:hidden">
-              <button className="navbar-burger flex items-center py-2 px-3 text-white rounded ">
+              <button
+                className="navbar-burger flex items-center py-2 px-3 text-white rounded "
+                onClick={toggle}
+              >
                 <svg
                   className="fill-current h-5 w-5"
                   viewBox="0 0 20 20"
@@ -61,12 +88,27 @@ const Navbar = () => {
                 >
                   Community
                 </Link>
-                <Link
+                <Dropdown menu={{ items }}>
+                  <button
+                    onClick={(e) => e.preventDefault()}
+                    className="block lg:inline-flex py-4 px-8 rounded-[32px] bg-[#1F1F1F] text-white text-base gap-1"
+                  >
+                    <Space>
+                      About
+                      <ArrowDown2 className="h-6 w-4" />
+                    </Space>
+                  </button>
+                </Dropdown>
+
+                {/* <Link
                   className="block lg:inline-flex py-4 px-8 rounded-[32px] bg-[#1F1F1F] text-white text-base gap-1"
                   href=""
                 >
-                  About <span><ArrowDown2 className='h-6 w-4'/></span>
-                </Link>
+                  About{' '}
+                  <span>
+                    <ArrowDown2 className="h-6 w-4" />
+                  </span>
+                </Link> */}
               </div>
             </div>
           </nav>
