@@ -97,8 +97,7 @@ const Developers = () => {
                   <Link
                     className="card border border-[#2C2929] p-5 backdrop-filter backdrop-blur-xs rounded-lg relative"
                     key={i}
-                    href={`${item?.link ? item?.link : '/#'}`}
-                    target="_blank"
+                    href={`${item?.link ? item?.link : '#'}`}
                   >
                     <div className="flex items-start justify-start h-14 w-14 mb-4">
                       <span className="rounded-full p-3 border border-[#484747]">
