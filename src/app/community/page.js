@@ -118,7 +118,7 @@ const Community = () => {
 
                     <div className="flex items-center justify-center gap-3 flex-1 flex-wrap">
                       <Link
-                        href=""
+                        href="https://klayoracle.gitbook.io/v1.0.0/"
                         className="text-[#96FADD] text-sm inline-flex font-light items-center gap-1 com_links"
                       >
                         <span className="underline underline-offset-2">
@@ -180,7 +180,7 @@ const Community = () => {
                         <ArrowRight className="text-sm h-3 w-3 -rotate-[30deg] arrow" />
                       </Link>
                       <Link
-                        href=""
+                        href="https://t.me/digioracle"
                         className="text-[#96FADD] text-sm inline-flex font-light items-center gap-1 com_links"
                       >
                         <span className="underline underline-offset-2">
@@ -215,7 +215,7 @@ const Community = () => {
 
                     <div className="flex items-center justify-center gap-3 flex-1 flex-wrap">
                       <Link
-                        href=""
+                        href="https://twitter.com/klayoracle"
                         className="text-[#96FADD] text-sm inline-flex font-light items-center gap-1 com_links"
                       >
                         <span className="underline underline-offset-2">
@@ -224,7 +224,7 @@ const Community = () => {
                         <ArrowRight className="text-sm h-3 w-3 -rotate-[30deg] arrow" />
                       </Link>
                       <Link
-                        href=""
+                        href="https://medium.com/@klayoracle"
                         className="text-[#96FADD] text-sm inline-flex font-light items-center gap-1 com_links"
                       >
                         <span className="underline underline-offset-2">
@@ -259,29 +259,11 @@ const Community = () => {
 
                     <div className="flex items-center justify-center gap-3 flex-1 flex-wrap">
                       <Link
-                        href=""
+                        href="https://forms.gle/gD7USXnCJKsA12f18"
                         className="text-[#96FADD] text-sm inline-flex font-light items-center gap-1 com_links"
                       >
                         <span className="underline underline-offset-2">
-                          Current openings
-                        </span>
-                        <ArrowRight className="text-sm h-3 w-3 -rotate-[30deg] arrow" />
-                      </Link>
-                      <Link
-                        href=""
-                        className="text-[#96FADD] text-sm inline-flex font-light items-center gap-1 com_links"
-                      >
-                        <span className="underline underline-offset-2">
-                          YouTube
-                        </span>
-                        <ArrowRight className="text-sm h-3 w-3 -rotate-[30deg] arrow" />
-                      </Link>
-                      <Link
-                        href=""
-                        className="text-[#96FADD] text-sm inline-flex font-light items-center gap-1 com_links"
-                      >
-                        <span className="underline underline-offset-2">
-                          Manifesto
+                          Apply Now
                         </span>
                         <ArrowRight className="text-sm h-3 w-3 -rotate-[30deg] arrow" />
                       </Link>

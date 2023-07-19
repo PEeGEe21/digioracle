@@ -84,7 +84,7 @@ const DevelopersTab = () => {
           <div className=" mt-10">
             <TabPanel className='w-full'>
               <div className="fade-in">
-                <div className="flex items-center justify-center mx-auto max-w-4xl flex-col gap-6 w-full">
+                <div className="flex items-center justify-center mx-auto max-w-4xl flex-col gap-6 w-full codeblock">
                   {/* <div className="flex flex-col gap-6"> */}
                   <DefaultCodeBlock text={PriceFeedText} />
 
@@ -103,7 +103,7 @@ const DevelopersTab = () => {
             </TabPanel>
             <TabPanel className='w-full'>
               <div className="fade-in">
-                <div className="flex items-center justify-center mx-auto max-w-4xl flex-col gap-6 w-full">
+                <div className="flex items-center justify-center mx-auto max-w-4xl flex-col gap-6 w-full codeblock">
                   {/* <div className="flex flex-col gap-6"> */}
                   <DefaultCodeBlock text={PriceFeedText} />
 
@@ -122,7 +122,7 @@ const DevelopersTab = () => {
             </TabPanel>
             <TabPanel className='w-full'>
               <div className="fade-in">
-                <div className="flex items-center justify-center mx-auto max-w-4xl flex-col gap-6 w-full">
+                <div className="flex items-center justify-center mx-auto max-w-4xl flex-col gap-6 w-full codeblock">
                   {/* <div className="flex flex-col gap-6"> */}
                   <DefaultCodeBlock text={PriceFeedText} />
 

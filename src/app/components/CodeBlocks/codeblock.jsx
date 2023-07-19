@@ -6,7 +6,7 @@ const DefaultCodeBlock = ({text}) => {
   return (
     // <div className='rounded-md'>
 
-    <CodeBlock
+    <CodeBlock 
       text={text}
       language="javascript"
       showLineNumbers={true} 
@@ -18,7 +18,7 @@ const DefaultCodeBlock = ({text}) => {
         borderRadius: '8px', 
         maxWidth:'700px',
 
-        overflowY: 'hidden',
+        overflowY: 'scroll',
       }}
     />
     // </div>

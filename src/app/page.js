@@ -27,15 +27,17 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import DefaultCodeBlock from './components/CodeBlocks/codeblock';
 import HomeTab from './components/Tabs/homeTab';
-import { DataProvidersLogos, PartnersLogos, SupportedChainsLogos } from './utils/data';
+import {
+  DataProvidersLogos,
+  PartnersLogos,
+  SupportedChainsLogos,
+} from './utils/data';
 
 // export async function generateMetadata({ params }) {
 //   return {
 //       title: "DigiOracle",
 //   };
 // }
-
-
 
 export default function Home() {
   return (
@@ -227,11 +229,11 @@ export default function Home() {
                         Modular Architecture
                       </h4>
                       <p className="text-[#DBDBDB] text-base">
-                        Leo mauris quis mus dapibus iaculis platea nibh nibh.
-                        Volutpat leo suspendisse vulputate faucibus in non erat.
-                        Consequat pharetra consectetur convallis id. In enim
-                        libero faucibus arcu purus amet diam. In risus placerat
-                        in tellus ornare senectus.
+                        DigiOracle's highly modular design maximizes network
+                        efficiency by separating network components such as data
+                        providers and nodes, and enabling them independently
+                        from each other, ensuring optimal resource utilization
+                        for secure and reliable off-chain data connectivity.
                       </p>
                     </div>
                   </div>
@@ -247,11 +249,11 @@ export default function Home() {
                         Minimalism and ease of use
                       </h4>
                       <p className="text-[#DBDBDB] text-base">
-                        Leo mauris quis mus dapibus iaculis platea nibh nibh.
-                        Volutpat leo suspendisse vulputate faucibus in non erat.
-                        Consequat pharetra consectetur convallis id. In enim
-                        libero faucibus arcu purus amet diam. In risus placerat
-                        in tellus ornare senectus.
+                        Designed for compatibility with all EVM-supported chains
+                        and tooling. DigiOracle does the heavy lifting of data
+                        sourcing, to aggregation, to providing them securely in
+                        formats that can be easily integrated within your smart
+                        contracts.
                       </p>
                     </div>
                   </div>
@@ -266,11 +268,12 @@ export default function Home() {
                         Secure Connectivity
                       </h4>
                       <p className="text-[#DBDBDB] text-base">
-                        Leo mauris quis mus dapibus iaculis platea nibh nibh.
-                        Volutpat leo suspendisse vulputate faucibus in non erat.
-                        Consequat pharetra consectetur convallis id. In enim
-                        libero faucibus arcu purus amet diam. In risus placerat
-                        in tellus ornare senectus.
+                        DigiOracle ensures the integrity and confidentiality of
+                        data, using authentication mechanisms such as SSL and
+                        OAuth to ensure encrypted communication between
+                        components, and providing a robust and secure bridge
+                        between Web3 applications and real-world events, data,
+                        and assets.
                       </p>
                     </div>
                   </div>
@@ -324,7 +327,9 @@ export default function Home() {
                 </h2>
                 <p className="text-center">
                   Integrate DigiOracle into your projects with our intuitive
-                  APIs and developer-friendly documentation. Access price feeds, verifiable random numbers, and other valuable off-chain datasets with DigiOracle.
+                  APIs and developer-friendly documentation. Access price feeds,
+                  verifiable random numbers, and other valuable off-chain
+                  datasets with DigiOracle.
                 </p>
               </div>
 
@@ -352,7 +357,9 @@ export default function Home() {
                 </div>
 
                 <p className="text-lg text-white font-light text-center md:text-left">
-                DigiOracle Explorer is an open dashboard for exploring the activity and real-time information of nodes, data explorers and data feeds on the DigiOracle network.
+                  DigiOracle Explorer is an open dashboard for exploring the
+                  activity and real-time information of nodes, data explorers
+                  and data feeds on the DigiOracle network.
                 </p>
               </div>
 

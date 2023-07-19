@@ -75,7 +75,7 @@ const Developers = () => {
                 DigiOracle.
               </p>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 ">
               <DevelopersTab />
             </div>
           </div>

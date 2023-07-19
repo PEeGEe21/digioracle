@@ -38,9 +38,9 @@ const Navbar = () => {
                 className="text-xl text-gray-800 font-semibold font-heading flex items-center justify-center"
               >
                 <Image
-                  src={'/Logo.png'}
+                  src={'/Logo.svg'}
                   alt={'logo'}
-                  width={60}
+                  width={150}
                   height={60}
                   priority
                 />

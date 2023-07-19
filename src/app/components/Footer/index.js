@@ -19,8 +19,8 @@ const Footer = () => {
                     className="navbar-brand mb-5 flex items-center justify-center text-center"
                   >
                     <Image
-                      src="/Logo.png"
-                      width={50}
+                      src="/Logo.svg"
+                      width={150}
                       height={50}
                       alt="logo"
                       loading={'lazy'}
