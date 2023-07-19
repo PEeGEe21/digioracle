@@ -15,7 +15,7 @@ import {
   Shuffle,
   TickCircle,
   Wifi,
-  Clock
+  Clock,
 } from 'iconsax-react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -27,177 +27,78 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import DefaultCodeBlock from './components/CodeBlocks/codeblock';
 import HomeTab from './components/Tabs/homeTab';
+import { DataProvidersLogos, PartnersLogos, SupportedChainsLogos } from './utils/data';
+
+// export async function generateMetadata({ params }) {
+//   return {
+//       title: "DigiOracle",
+//   };
+// }
 
 
-const SupportedChainsLogos = [
-  {
-    name: 'klaytn',
-    src: '/images/Logos/klaytn.png',
-    is_available: true,
-  },
-  {
-    name: 'celo',
-    src: '/images/Logos/celo.png',
-    is_available: false,
-  },
-  {
-    name: 'binance',
-    src: '/images/Logos/binance.png',
-    is_available: false,
-  },
-  {
-    name: 'polygon',
-    src: '/images/Logos/polygon.png',
-    is_available: false,
-  },
-  {
-    name: 'tron',
-    src: '/images/Logos/tron.png',
-    is_available: false,
-  },
-  {
-    name: 'optimism',
-    src: '/images/Logos/optimism.png',
-    is_available: false,
-  },
-  {
-    name: 'arb',
-    src: '/images/Logos/arb.png',
-    is_available: false,
-  },
-  {
-    name: 'vechain',
-    src: '/images/Logos/vechain.png',
-    is_available: false,
-  },
-];
-
-const PartnersLogos = [
-  {
-    name: 'klaytn',
-    src: '/images/Logos/klaytn.png',
-  },
-  {
-    name: 'dorahacks',
-    src: '/images/Logos/dorahacks.png',
-  },
-];
-
-const DataProvidersLogos = [
-  {
-    name: 'coinmarketcap',
-    src: '/images/Logos/CM.png',
-  },
-  {
-    name: 'coinbase',
-    src: '/images/Logos/CB.png',
-  },
-  {
-    name: 'cryptocompare',
-    src: '/images/Logos/CC.svg',
-  },
-  {
-    name: 'binance',
-    src: '/images/Logos/binance.png',
-  },
-  {
-    name: 'huobi',
-    src: '/images/Logos/HU.svg',
-  },
-  {
-    name: 'bitmart',
-    src: '/images/Logos/BM.png',
-  },
-  {
-    name: 'uniswap',
-    src: '/images/Logos/uniswap.svg',
-  },
-  {
-    name: 'sushiswap',
-    src: '/images/Logos/Sushiswap-white-logo 1.svg',
-  },
-  {
-    name: 'polygon',
-    src: '/images/Logos/polygon.png',
-  },
-  {
-    name: 'coinapi',
-    src: '/images/Logos/coinapi.png',
-  },
-];
-
-const PriceFeedText = `// SPDX-License-Identifier: MIT
-
-pragma solidity ^0.8.16;
-
-import "./KlayOracleInterface.sol";
-
-contract OracleConsumerSample {
-    address public immutable oracleAddress;
-
-    uint256 public klayOutput;
-
-    constructor(address _oracleAddress) {
-        require(_oracleAddress != address(0));
-        oracleAddress = _oracleAddress;
-    }
-
-    function swapEthtoKlay() public returns (bool) {
-        KlayOracleInterface oracle = KlayOracleInterface(oracleAddress);
-
-        bool replied = oracle.newOracleRequest(
-            this.swap.selector,
-            address(this)
-        );
-
-        return replied;
-    }
-
-    function swap(uint256 _klayOutput) public {
-        klayOutput = _klayOutput;
-        //Swap eth to klay
-    }
-}`;
 
 export default function Home() {
   return (
     <>
-      <div className="font-gtwalsh space-y-6">
-        <div>
-          <Navbar />
-          <section className="hero relative py-20 md:py-40 px-5">
-            <div className="container hero__block max-w-[800px] mx-auto w-full">
-              <div className="flex items-center justify-center text-center">
-                <div className="">
-                  <div className="mb-5">
-                    <h1 className="font-michroma text-[34px] md:text-[56px] leading-[49px] md:leading-[79px] font-medium text-white">
-                      Supercharge your smart contracts with real-world data
-                    </h1>
-                  </div>
+      <div className="font-gtwalsh">
+        <Navbar />
 
-                  <div>
-                    <p className="mb-10 hero-subtext text-[19px] leading-[30px] text-white">
-                      DigiOracle is a highly modular blockchain oracle that
-                      allows you securely connect your Web3 applications with
-                      events, data and assets from the real world.
-                    </p>
-                  </div>
-                  <div className="flex md:block w-full md:w-1/2 justify-center items-center mx-auto">
-                    <Link
-                      href="https://klayoracle.gitbook.io/v1.0.0/"
-                      className="primary--button btn w-full text-white px-8 py-4 rounded inline-flex gap-4 justify-center items-center text-center"
-                    >
-                      Start Building
-                      <ArrowCircleRight2 className="arrow" />
-                    </Link>
-                  </div>
+        <section className="hero relative pb-20  pt-24 md:pb-40 md:pt-48 px-5">
+          <div className="container hero__block max-w-[900px] mx-auto w-full">
+            <div className="flex items-center justify-center text-center">
+              <div className="">
+                <div className="mb-5">
+                  <h1 className="font-michroma text-[34px] md:text-[56px] leading-[49px] md:leading-[79px] font-medium text-white">
+                    Supercharge your smart contracts with real-world data
+                  </h1>
+                </div>
+
+                <div>
+                  <p className="mb-10 hero-subtext text-[19px] leading-[30px] text-white">
+                    DigiOracle is a highly modular blockchain oracle that allows
+                    you securely connect your Web3 applications with events,
+                    data and assets from the real world.
+                  </p>
+                </div>
+                <div className="flex md:block w-full md:w-1/2 justify-center items-center mx-auto">
+                  <Link
+                    href="https://klayoracle.gitbook.io/v1.0.0/"
+                    className="primary--button btn w-full text-white px-8 py-4 rounded inline-flex gap-4 justify-center items-center text-center"
+                  >
+                    Start Building
+                    <ArrowCircleRight2 className="arrow" />
+                  </Link>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
 
-        <section className="py-[4em] sec_021">
+          <Image
+            src="/images/Ellipse 13.png"
+            className="w-100 object-contain object-left -z-10"
+            fill
+            alt="heroimg"
+            loading={'lazy'}
+          />
+
+          <Image
+            src="/images/Ellipse 15.png"
+            className="w-100 object-contain object-right -z-10"
+            fill
+            alt="heroimg"
+            loading={'lazy'}
+          />
+
+          <Image
+            src="/images/blue-background-with-blue-background-text 1.png"
+            className="w-100 object-cover object-center -z-10"
+            fill
+            alt="heroimg"
+            loading={'lazy'}
+          />
+        </section>
+
+        <section className="py-[5rem] sec_021">
           <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full next_level">
             <div className=" w-full  mt-3 md:mt-0 rounded fade-in relative py-6">
               <Tabs>
@@ -205,22 +106,22 @@ export default function Home() {
                   <div className="mb-3  w-full">
                     <TabList className="flex flex-row  justify-start md:justify-evenly inner_tab_header gap-3 w-full border-b border-[#5f5353] whitespace-nowrap overflow-x-auto">
                       <Tab className="">
-                        <button className="flex items-center justify-center p-2 px-3 w-full hover:border-b-[3px] hover:border-b-[#628FC4] hover:text-[#344054] ">
-                          <span className="text-white text-2xl px-6 py-3 transition duration-200 ease">
+                        <button className="flex items-center justify-center p-2 px-3 w-full hover:border-b-[3px] hover:border-b-[#628FC4] hover:text-[#11a97d] text-white ">
+                          <span className=" text-2xl px-6 py-3 transition duration-200 ease">
                             Supported chains
                           </span>
                         </button>
                       </Tab>
                       <Tab className="">
-                        <button className="flex items-center justify-center p-2 px-3 w-full  hover:border-b-[3px] hover:border-b-[#628FC4] hover:text-[#344054]">
-                          <span className="text-white text-2xl px-6 py-3 transition duration-200 ease">
+                        <button className="flex items-center justify-center p-2 px-3 w-full  hover:border-b-[3px] hover:border-b-[#628FC4] hover:text-[#11a97d] text-white">
+                          <span className=" text-2xl px-6 py-3 transition duration-200 ease">
                             Partners
                           </span>
                         </button>
                       </Tab>
                       <Tab className="">
-                        <button className="flex items-center justify-center p-2 px-3 w-full hover:border-b-[3px] hover:border-b-[#628FC4] hover:text-[#344054]">
-                          <span className="text-white text-2xl px-6 py-3 transition duration-200 ease">
+                        <button className="flex items-center justify-center p-2 px-3 w-full hover:border-b-[3px] hover:border-b-[#628FC4] hover:text-[#11a97d] text-white">
+                          <span className=" text-2xl px-6 py-3 transition duration-200 ease">
                             Data Providers
                           </span>
                         </button>
@@ -233,7 +134,10 @@ export default function Home() {
                       <div className="mx-auto max-w-3xl py-6 fade-in">
                         <div className="flex items-center justify-center gap-12 flex-wrap w-full">
                           {SupportedChainsLogos?.map((x, i) => (
-                            <div key={i} className="h-auto w-auto relative flex items-center gap-1">
+                            <div
+                              key={i}
+                              className="h-auto w-auto relative flex items-center gap-1"
+                            >
                               <Image
                                 src={x?.src}
                                 height={80}
@@ -251,7 +155,7 @@ export default function Home() {
                                   className="absolute -right-2 top-0"
                                 />
                               ) : (
-                                <Clock size={12} className="" color='#979797' />
+                                <Clock size={12} className="" color="#979797" />
                               )}
                             </div>
                           ))}
@@ -301,7 +205,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-[4em] sec_022">
+        <section className="py-[5rem] sec_022">
           <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full next_level">
             <div className="py-14">
               <div className="mb-9">
@@ -411,7 +315,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="py-[4em] sec_024">
+        <section className="py-[5rem] sec_024">
           <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full next_level">
             <div className="py-14">
               <div className="mb-9 py-8 flex flex-col gap-4">
@@ -431,7 +335,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-[4em] bg-[#131414]">
+        <section className="py-[5rem] bg-[#131414]">
           <div className="container mx-auto max-w-7xl py-12 px-5 md:py-20 md:px-20 ">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 items-center space-y-3">
               <div className="flex flex-col gap-4">
@@ -467,7 +371,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-[4em]">
+        <section className="py-[5rem]">
           <div className="container mx-auto max-w-7xl px-4">
             <div className="mb-5">
               <h2 className="font-michroma text-center text-[40px] text-white mb-5">
@@ -477,7 +381,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3  lg:grid-cols-3 gap-8 mt-10">
               <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
                 <div className="card-img flex items-center justify-center py-5 mb-12">
-                  <Code1 className="h-[100px] w-[100px]" variant='Bulk'/>
+                  <Code1 className="h-[100px] w-[100px]" variant="Bulk" />
                 </div>
                 <div className="card-body my-4 flex flex-col gap-8 ">
                   <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 text-white md:h-20">
@@ -506,7 +410,7 @@ export default function Home() {
 
               <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
                 <div className="card-img flex items-center justify-center py-5 mb-12">
-                  <Bezier className="h-[100px] w-[100px]" variant='Bulk'/>
+                  <Bezier className="h-[100px] w-[100px]" variant="Bulk" />
                 </div>
                 <div className="card-body my-4 flex flex-col gap-8 justify-end">
                   <h5 className="text-[30px] leading-[40px] w-full md:w-3/4  md:h-20">
@@ -535,7 +439,7 @@ export default function Home() {
 
               <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
                 <div className="card-img flex items-center justify-center py-5 mb-12">
-                  <People className="h-[100px] w-[100px]" variant='Bulk'/>
+                  <People className="h-[100px] w-[100px]" variant="Bulk" />
                 </div>
                 <div className="card-body my-4 flex flex-col gap-8 justify-end">
                   <h5 className="text-[30px] leading-[40px] w-full md:w-3/4  md:h-20">

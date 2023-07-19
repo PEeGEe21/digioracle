@@ -1,7 +1,5 @@
 'use client';
-
 import React from 'react';
-
 import Image from 'next/image';
 import Link from 'next/link';
 import { Tabs } from 'react-tabs';
@@ -15,51 +13,54 @@ import { resources } from '../utils/data';
 import { ArrowCircleRight2 } from 'iconsax-react';
 import DevelopersTab from '../components/Tabs/developersTab';
 
+// export const metadata = {
+//   title: 'Developers',
+// }
+
 const Developers = () => {
   return (
-    <div className="font-gtwalsh space-y-6">
-      <div>
-        <Navbar />
-        <section className="hero relative py-20 md:py-40 px-5">
-          <div className="container hero__block max-w-[800px] mx-auto w-full">
-            <div className="flex items-center justify-center text-center">
-              <div className="">
-                <div className="mb-5">
-                  <h1 className="font-michroma text-[34px] md:text-[56px] leading-[49px] md:leading-[79px] font-medium text-white">
-                    Developer-friendly Oracle network
-                  </h1>
-                </div>
+    <div className="font-gtwalsh">
+      <Navbar />
 
-                <div>
-                  <p className="mb-10 hero-subtext text-[19px] leading-[30px] text-white">
-                    DigiOracle is built with the simplicity of integration as a
-                    core principle. Embed price feeds and other real-world data
-                    into your decentralized applications today.
-                  </p>
-                </div>
+      <section className="hero relative  pb-20  pt-24 md:pb-40 md:pt-48 px-5">
+        <div className="container hero__block max-w-[800px] mx-auto w-full">
+          <div className="flex items-center justify-center text-center">
+            <div className="">
+              <div className="mb-5">
+                <h1 className="font-michroma text-[34px] md:text-[56px] leading-[49px] md:leading-[79px] font-medium text-white">
+                  Developer-friendly Oracle network
+                </h1>
+              </div>
+
+              <div>
+                <p className="mb-10 hero-subtext text-[19px] leading-[30px] text-white">
+                  DigiOracle is built with the simplicity of integration as a
+                  core principle. Embed price feeds and other real-world data
+                  into your decentralized applications today.
+                </p>
               </div>
             </div>
           </div>
+        </div>
 
-          <Image
-            src="/images/blue-green-wave-with-grid-lines-lines 1.png"
-            className="w-100 object-contain object-left -z-10"
-            fill
-            alt="heroimg"
-            loading={'lazy'}
-          />
+        <Image
+          src="/images/blue-green-wave-with-grid-lines-lines 1.png"
+          className="w-100 object-contain object-left -z-10"
+          fill
+          alt="heroimg"
+          loading={'lazy'}
+        />
 
-          <Image
-            src="/images/blue-green-wave-with-grid-lines-lines 2.png"
-            className="w-100 object-contain object-right -z-10"
-            fill
-            alt="heroimg"
-            loading={'lazy'}
-          />
-        </section>
-      </div>
+        <Image
+          src="/images/blue-green-wave-with-grid-lines-lines 2.png"
+          className="w-100 object-contain object-right -z-10"
+          fill
+          alt="heroimg"
+          loading={'lazy'}
+        />
+      </section>
 
-      <section className="py-[4em]sec_026 dev_tab">
+      <section className="py-[5rem] sec_026 dev_tab">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9 flex flex-col gap-4 pb-4 max-w-4xl mx-auto">
@@ -79,7 +80,7 @@ const Developers = () => {
         </div>
       </section>
 
-      <section className="py-[4em] sec_022">
+      <section className="py-[5rem] sec_022">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9">
@@ -116,7 +117,7 @@ const Developers = () => {
         </div>
       </section>
 
-      <section className="py-[4em]sec_026">
+      <section className="py-[5rem]sec_026">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9 flex flex-col gap-4 pb-4">
@@ -218,7 +219,7 @@ const Developers = () => {
         </div>
       </section>
 
-      <div className="px-4 sec_023 py-[4em]">
+      <div className="px-4 sec_023 py-[5rem]">
         <div className="rounded-3xl bg-[#0D1A1A] container mx-auto max-w-7xl relative h-full w-full block">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4  py-12 px-5 md:py-14 md:px-20">
             <div className="flex flex-col gap-4 text-center md:text-left">

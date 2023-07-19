@@ -8,31 +8,31 @@ import { ArrowRight, Bezier, Code1, DocumentText, People } from 'iconsax-react';
 
 const Community = () => {
   return (
-    <div className="font-gtwalsh space-y-6">
-      <div>
-        <Navbar />
-        <section className="hero relative py-20 md:py-40 px-5 h-full w-full">
-          <div className="container hero__block max-w-[900px] mx-auto w-full">
-            <div className="flex items-center justify-center text-center">
-              <div className="">
-                <div className="mb-5">
-                  <h1 className="font-michroma text-[34px] md:text-[56px] leading-[49px] md:leading-[79px] font-medium text-white">
-                    Built for the community
-                  </h1>
-                  <div className="my-4">
-                    <p className="mb-10 hero-subtext text-[19px] leading-[30px] text-white">
-                      DigiOracle is built on the ethos of simplicity and
-                      inclusivity. As a result, our community welcomes both Web3
-                      newbies and experts alike, fostering conversations and
-                      initiatives to help grow the ecosystem.
-                    </p>
-                  </div>
+    <div className="font-gtwalsh">
+      {/* <div> */}
+      <Navbar />
+      <section className="hero relative  pb-20  pt-24 md:pb-40 md:pt-48 px-5 h-full w-full">
+        <div className="container hero__block max-w-[900px] mx-auto w-full">
+          <div className="flex items-center justify-center text-center">
+            <div className="">
+              <div className="mb-5">
+                <h1 className="font-michroma text-[34px] md:text-[56px] leading-[49px] md:leading-[79px] font-medium text-white">
+                  Built for the community
+                </h1>
+                <div className="my-4">
+                  <p className="mb-10 hero-subtext text-[19px] leading-[30px] text-white">
+                    DigiOracle is built on the ethos of simplicity and
+                    inclusivity. As a result, our community welcomes both Web3
+                    newbies and experts alike, fostering conversations and
+                    initiatives to help grow the ecosystem.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+      {/* </div> */}
 
       <section className="py-[5rem] sec_022">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
@@ -322,7 +322,7 @@ const Community = () => {
         </div>
       </section>
 
-      <section className="py-[4em]">
+      <section className="py-[5rem]">
         <div className="container mx-auto max-w-7xl px-4">
           <div className="mb-5">
             <h2 className="font-michroma text-center text-[40px] text-white mb-5">
@@ -332,7 +332,7 @@ const Community = () => {
           <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-8 mt-10">
             <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
               <div className="card-img flex items-center justify-center py-5 mb-12">
-                <Code1 className="h-[100px] w-[100px]" variant='Bulk' />
+                <Code1 className="h-[100px] w-[100px]" variant="Bulk" />
               </div>
               <div className="card-body my-4 flex flex-col gap-8 ">
                 <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 text-white md:h-20">
@@ -361,7 +361,7 @@ const Community = () => {
 
             <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
               <div className="card-img flex items-center justify-center py-5 mb-12">
-                <Bezier className="h-[100px] w-[100px]" variant='Bulk' />
+                <Bezier className="h-[100px] w-[100px]" variant="Bulk" />
               </div>
               <div className="card-body my-4 flex flex-col gap-8 justify-end">
                 <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 md:h-20">
@@ -390,7 +390,7 @@ const Community = () => {
 
             <div className="card rounded-lg border border-[#484747] px-[22px] py-[62px] backdrop-filter backdrop-blur-xs relative h-full w-full block">
               <div className="card-img flex items-center justify-center py-5 mb-12">
-                <People className="h-[100px] w-[100px]" variant='Bulk'/>
+                <People className="h-[100px] w-[100px]" variant="Bulk" />
               </div>
               <div className="card-body my-4 flex flex-col gap-8 justify-end">
                 <h5 className="text-[30px] leading-[40px] w-full md:w-3/4 md:h-20">

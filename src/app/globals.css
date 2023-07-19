@@ -34,9 +34,10 @@ body {
   border-bottom-color: #046ed1;
 }
 
+.sec_021 li.react-tabs__tab--selected button,
 .sec_024 li.react-tabs__tab--selected button,
 .sec_026 li.react-tabs__tab--selected button {
-  color: #11a97d;
+  color: #11a97d !important;
 }
 
 .cta-link:hover .cta-icon_animate {

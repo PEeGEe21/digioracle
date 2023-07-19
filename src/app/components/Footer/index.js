@@ -75,7 +75,7 @@ const Footer = () => {
                   </Link>
 
                   <Link href="/" target="_blank" className="social-icon  text-[#878C91] hover:text-white">
-                    <Youtube fill='white' />
+                    <Youtube variant='Bold' />
                   </Link>
                 </div>
               </div>

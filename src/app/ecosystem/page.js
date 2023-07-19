@@ -7,43 +7,48 @@ import Footer from '../components/Footer';
 import { resources } from '../utils/data';
 import { ArrowCircleRight2, DocumentText } from 'iconsax-react';
 
+// export async function generateMetadata({ params }) {
+//   return {
+//       title: "Ecosystem",
+//   };
+// }
+
 const Ecosystem = () => {
   return (
-    <div className="font-gtwalsh space-y-6">
-      <div>
-        <Navbar />
-        <section className="hero relative py-20 md:py-40 px-5 h-full w-full">
-          <div className="container hero__block max-w-[800px] mx-auto w-full">
-            <div className="flex items-center justify-center text-center">
-              <div className="">
-                <div className="mb-5">
-                  <h1 className="font-michroma text-[34px] md:text-[56px] leading-[49px] md:leading-[79px] font-medium text-white">
-                    Open, accessible, and modular ecosystem
-                  </h1>
-                </div>
+    <div className="font-gtwalsh">
+      <Navbar />
+
+      <section className="hero relative  pb-20  pt-24 md:pb-40 md:pt-48 px-5 h-full w-full">
+        <div className="container hero__block max-w-[800px] mx-auto w-full">
+          <div className="flex items-center justify-center text-center">
+            <div className="">
+              <div className="mb-5">
+                <h1 className="font-michroma text-[34px] md:text-[56px] leading-[49px] md:leading-[79px] font-medium text-white">
+                  Open, accessible, and modular ecosystem
+                </h1>
               </div>
             </div>
           </div>
+        </div>
 
-          <Image
-            src="/images/441 1.svg"
-            className="w-100 object-contain object-right -z-10"
-            fill
-            alt="heroimg"
-            loading={'lazy'}
-          />
+        <Image
+          src="/images/441 1.svg"
+          className="w-100 object-contain object-right -z-10"
+          fill
+          alt="heroimg"
+          loading={'lazy'}
+        />
 
-          <Image
-            src="/images/441 2.svg"
-            className="w-100 object-contain object-left -z-10"
-            fill
-            alt="heroimg"
-            loading={'lazy'}
-          />
-        </section>
-      </div>
+        <Image
+          src="/images/441 2.svg"
+          className="w-100 object-contain object-left -z-10"
+          fill
+          alt="heroimg"
+          loading={'lazy'}
+        />
+      </section>
 
-      <section className="py-[4em] sec_022">
+      <section className="py-[5rem] sec_022">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9">
@@ -74,7 +79,7 @@ const Ecosystem = () => {
                         href="/"
                         className="underline text-[#96FADD] text-base"
                       >
-                       Learn more about data sources
+                        Learn more about data sources
                       </Link>
                     </div>
                   </div>
@@ -90,7 +95,9 @@ const Ecosystem = () => {
                     <h4 className="text-xl mb-3 text-[#FFF]">Data Providers</h4>
                     <div className="flex flex-col gap-2">
                       <p className="text-[#DBDBDB] text-base md:h-32">
-                      Data providers are responsible for subscribing to data sources and configuring data feeds and Oracle contracts accessible to end users.
+                        Data providers are responsible for subscribing to data
+                        sources and configuring data feeds and Oracle contracts
+                        accessible to end users.
                       </p>
 
                       <Link
@@ -113,7 +120,9 @@ const Ecosystem = () => {
                     <h4 className="text-xl mb-3 text-[#FFF]">Nodes</h4>
                     <div className="flex flex-col gap-2">
                       <p className="text-[#DBDBDB] text-base md:h-32">
-                      Nodes on DigiOracle are responsible for handling computational tasks on behalf of data providers, including data retrieval, filtering, and aggregation. 
+                        Nodes on DigiOracle are responsible for handling
+                        computational tasks on behalf of data providers,
+                        including data retrieval, filtering, and aggregation.
                       </p>
 
                       <Link
@@ -136,7 +145,9 @@ const Ecosystem = () => {
                     <h4 className="text-xl mb-3 text-[#FFF]">Data Consumers</h4>
                     <div className="flex flex-col gap-2">
                       <p className="text-[#DBDBDB] text-base md:h-32">
-                      Also known as subscribers, these are end users who make use of external data within their smart contracts and decentralized applications.
+                        Also known as subscribers, these are end users who make
+                        use of external data within their smart contracts and
+                        decentralized applications.
                       </p>
 
                       <Link
@@ -154,7 +165,7 @@ const Ecosystem = () => {
         </div>
       </section>
 
-      <section className="py-[4em] sec_022">
+      <section className="py-[5rem] sec_022">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9">
@@ -191,7 +202,7 @@ const Ecosystem = () => {
         </div>
       </section>
 
-      <section className="py-[4em] sec_026">
+      <section className="py-[5rem] sec_026">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9 flex flex-col gap-4 pb-4">
@@ -293,7 +304,7 @@ const Ecosystem = () => {
         </div>
       </section>
 
-      <div className="px-4 sec_023 py-[4em]">
+      <div className="px-4 sec_023 py-[5rem]">
         <div className="rounded-3xl bg-[#0D1A1A] container mx-auto max-w-7xl relative h-full w-full block">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4  py-12 px-5 md:py-14 md:px-20">
             <div className="flex flex-col gap-4 text-center md:text-left">
@@ -312,7 +323,6 @@ const Ecosystem = () => {
               >
                 Talk to us
                 <ArrowCircleRight2 className="arrow" />
-
               </a>
             </div>
           </div>

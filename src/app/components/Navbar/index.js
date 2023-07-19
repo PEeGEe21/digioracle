@@ -12,31 +12,25 @@ import { Dropdown, Space } from 'antd';
 
 const items = [
   {
-    label: (
-      <Link href="/">
-        Why DigiOracle?
-      </Link>
-    ),
+    label: <Link href="/">Why DigiOracle?</Link>,
     key: '1',
   },
   {
-    label: (
-      <Link href="/about/company">
-        Company
-      </Link>
-    ),
+    label: <Link href="/about/company">Company</Link>,
     key: '2',
-  },
+  }
 ];
 
 const Navbar = () => {
   const { toggle, showMenu } = useContext(MenuContext) || {};
 
-  console.log(showMenu, 'showMenu');
+  // console.log(showMenu, 'showMenu');
   return (
     <>
-      <header className={`shadow-header w-full bg-transparent z-50 `}>
-        <div className="container mx-auto max-w-7xl py-5">
+      <header
+        className={`shadow-header w-full bg-transparent z-50 fixed top-0  left-0 `}
+      >
+        <div className="container mx-auto max-w-7xl">
           <nav className="flex items-center justify-between px-3 lg:px-6 py-4 whitespace-nowrap text-sm">
             <div className=" lg:order-1 w-auto lg:w-1/4 lg:text-center">
               <Link
@@ -90,7 +84,7 @@ const Navbar = () => {
                 >
                   Community
                 </Link>
-                <Dropdown menu={{ items }} className='font-outfit'>
+                <Dropdown menu={{ items }} className="font-outfit">
                   <button
                     onClick={(e) => e.preventDefault()}
                     className="block lg:inline-flex py-4 px-8 rounded-[32px] bg-[#1F1F1F] text-white text-base gap-1 font-outfit"
@@ -114,6 +108,19 @@ const Navbar = () => {
               </div>
             </div>
           </nav>
+
+          {showMenu && (
+            <div className='block lg:hidden'>
+              <div className="bg-[#0c0f0e] text-white py-4">
+                <div className="flex flex-col items-start w-full divide-y divide-[#0c0f0e]">
+                  <Link className="w-full px-3 py-2 hover:bg-[#1F1F1F]" href="/developers">Developers</Link>
+                  <Link className="w-full px-3 py-2 hover:bg-[#1F1F1F]" href="/ecosystem">Ecosystem</Link>
+                  <Link className="w-full px-3 py-2 hover:bg-[#1F1F1F]" href="/community">Community</Link>
+                  <Link className="w-full px-3 py-2 hover:bg-[#1F1F1F]" href="/about/company">About</Link>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </header>
     </>

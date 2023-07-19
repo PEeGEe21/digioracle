@@ -7,23 +7,23 @@ import { ArrowCircleRight2, ArrowRight, DocumentText } from 'iconsax-react';
 
 const Company = () => {
   return (
-    <div className="font-gtwalsh space-y-6">
-      <div>
-        <Navbar />
-        <section className="hero relative py-20 md:py-40 px-5 h-full w-full">
-          <div className="container hero__block max-w-[800px] mx-auto w-full">
-            <div className="flex items-center justify-center text-center">
-              <div className="">
-                <div className="mb-5">
-                  <h1 className="font-michroma text-[34px] md:text-[56px] leading-[49px] md:leading-[79px] font-medium text-white">
-                    The Primer
-                  </h1>
-                </div>
+    <div className="font-gtwalsh">
+      {/* <div> */}
+      <Navbar />
+      <section className="hero relative  pb-20  pt-24 md:pb-40 md:pt-48 px-5 h-full w-full">
+        <div className="container hero__block max-w-[800px] mx-auto w-full">
+          <div className="flex items-center justify-center text-center">
+            <div className="">
+              <div className="mb-5">
+                <h1 className="font-michroma text-[34px] md:text-[56px] leading-[49px] md:leading-[79px] font-medium text-white">
+                  The Primer
+                </h1>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+      {/* </div> */}
 
       <div className="px-4 sec_053">
         <div className="rounded-3xl bg container mx-auto max-w-4xl relative h-full w-full block">
@@ -49,7 +49,7 @@ const Company = () => {
         </div>
       </div>
 
-      <section className="py-[4em] sec_022">
+      <section className="py-[5rem] sec_022">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9">
@@ -126,7 +126,7 @@ const Company = () => {
         </div>
       </section>
 
-      <section className="py-[4em] sec_022">
+      <section className="py-[5rem] sec_022">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-12">
@@ -210,7 +210,7 @@ const Company = () => {
         </div>
       </section>
 
-      <div className="px-4 sec_023 py-[4em]">
+      <div className="px-4 sec_023 py-[5rem]">
         <div className="rounded-3xl bg-[#0D1A1A] container mx-auto max-w-7xl relative h-full w-full block">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4  py-12 px-5 md:py-14 md:px-20">
             <div className="flex flex-col gap-4 text-center md:text-left">
@@ -241,7 +241,7 @@ const Company = () => {
         </div>
       </div>
 
-      <section className="py-[4em] bg-[#131414]">
+      <section className="py-[5rem] bg-[#131414]">
         <div className="container mx-auto max-w-7xl py-12 px-5 md:py-12 md:px-20 ">
           <div className="">
             <div className="mb-9">
