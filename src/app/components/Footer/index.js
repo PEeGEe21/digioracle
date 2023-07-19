@@ -70,7 +70,7 @@ const Footer = () => {
               </div>
               <div>
                 <div className="inline-flex items-center justify-start lg:justify-center gap-2">
-                  <Link href="/" target="_blank" className="social-icon text-[#878C91] hover:text-white">
+                  <Link href="https://github.com/KlayOracle" target="_blank" className="social-icon text-[#878C91] hover:text-white">
                     <Github />
                   </Link>
 

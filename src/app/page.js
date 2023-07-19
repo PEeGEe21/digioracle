@@ -324,7 +324,7 @@ export default function Home() {
                 </h2>
                 <p className="text-center">
                   Integrate DigiOracle into your projects with our intuitive
-                  APIs and developer-friendly documentation
+                  APIs and developer-friendly documentation. Access price feeds, verifiable random numbers, and other valuable off-chain datasets with DigiOracle.
                 </p>
               </div>
 
@@ -352,9 +352,7 @@ export default function Home() {
                 </div>
 
                 <p className="text-lg text-white font-light text-center md:text-left">
-                  Molestie morbi praesent urna eget purus mattis vitae blandit.
-                  Iaculis non rhoncus tortor phasellus pulvinar consectetur
-                  neque magnis. Risus nunc praesent in.
+                DigiOracle Explorer is an open dashboard for exploring the activity and real-time information of nodes, data explorers and data feeds on the DigiOracle network.
                 </p>
               </div>
 
@@ -389,7 +387,7 @@ export default function Home() {
                   </h5>
                   <div>
                     <Link
-                      href="/"
+                      href="/developers"
                       className="text-base font-light text-[#96FADD] cta-link"
                     >
                       Explore{' '}
@@ -418,7 +416,7 @@ export default function Home() {
                   </h5>
                   <div>
                     <Link
-                      href="/"
+                      href="/ecosystem"
                       className="text-base font-light text-[#96FADD] cta-link"
                     >
                       Explore{' '}
@@ -447,7 +445,7 @@ export default function Home() {
                   </h5>
                   <div>
                     <Link
-                      href="/"
+                      href="/community"
                       className="text-base font-light text-[#96FADD] cta-link"
                     >
                       Explore{' '}

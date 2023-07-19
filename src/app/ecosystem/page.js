@@ -4,7 +4,7 @@ import React from 'react';
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { resources } from '../utils/data';
+import { resources, ecoresources } from '../utils/data';
 import { ArrowCircleRight2, DocumentText } from 'iconsax-react';
 
 // export async function generateMetadata({ params }) {
@@ -176,7 +176,7 @@ const Ecosystem = () => {
 
             <div className="pt-4 px-3">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-5 gap-y-8">
-                {resources?.map((item, i) => (
+                {ecoresources?.map((item, i) => (
                   <div
                     className="card border border-[#2C2929] p-5 backdrop-filter backdrop-blur-xs rounded-lg"
                     key={i}

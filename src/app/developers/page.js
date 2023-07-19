@@ -70,7 +70,9 @@ const Developers = () => {
               <p className="text-lg text-white font-light text-center">
                 With DigiOracle&apos;s intuitive APIs and developer-friendly
                 documentation, integrating our oracle into your projects is
-                straightforward and hassle-free.
+                straightforward and hassle-free. Access price feeds, verifiable
+                random numbers, and other valuable off-chain datasets with
+                DigiOracle.
               </p>
             </div>
             <div className="mt-5">
@@ -92,9 +94,11 @@ const Developers = () => {
             <div className="pt-4 px-3">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-5 gap-y-8">
                 {resources?.map((item, i) => (
-                  <div
-                    className="card border border-[#2C2929] p-5 backdrop-filter backdrop-blur-xs rounded-lg"
+                  <Link
+                    className="card border border-[#2C2929] p-5 backdrop-filter backdrop-blur-xs rounded-lg relative"
                     key={i}
+                    href={`${item?.link ? item?.link : '/#'}`}
+                    target="_blank"
                   >
                     <div className="flex items-start justify-start h-14 w-14 mb-4">
                       <span className="rounded-full p-3 border border-[#484747]">
@@ -109,7 +113,14 @@ const Developers = () => {
                         {item?.subtext}
                       </p>
                     </div>
-                  </div>
+                    {!item?.available && (
+                      <div className="flex items-center justify-center md:justify-start mb-3 absolute top-3 right-3">
+                        <span className="text-[#0C0F0E] text-xs font-light rounded-3xl bg-[#BAFBE8] px-3 py-1 ">
+                          coming soon
+                        </span>
+                      </div>
+                    )}
+                  </Link>
                 ))}
               </div>
             </div>

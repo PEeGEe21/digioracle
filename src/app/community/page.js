@@ -340,7 +340,7 @@ const Community = () => {
                 </h5>
                 <div>
                   <Link
-                    href="/"
+                    href="/developers"
                     className="text-base font-light text-[#96FADD] cta-link"
                   >
                     Explore{' '}
@@ -369,7 +369,7 @@ const Community = () => {
                 </h5>
                 <div>
                   <Link
-                    href="/"
+                    href="/ecosystem"
                     className="text-base font-light text-[#96FADD] cta-link"
                   >
                     Explore{' '}
@@ -398,7 +398,7 @@ const Community = () => {
                 </h5>
                 <div>
                   <Link
-                    href="/"
+                    href="/community"
                     className="text-base font-light text-[#96FADD] cta-link"
                   >
                     Explore{' '}

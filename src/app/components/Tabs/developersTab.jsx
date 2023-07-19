@@ -80,7 +80,8 @@ const DevelopersTab = () => {
             </TabList>
           </div>
 
-          <div className="flex items-center justify-center mt-10 ">
+          {/* flex items-center justify-center  */}
+          <div className=" mt-10">
             <TabPanel className='w-full'>
               <div className="fade-in">
                 <div className="flex items-center justify-center mx-auto max-w-4xl flex-col gap-6 w-full">

@@ -12,26 +12,56 @@ export const resources = [
     icon: <DocumentText />,
     title: 'Documentation',
     subtext: 'Dive into the docs',
+    link: 'https://klayoracle.gitbook.io/v1.0.0/',
+    available: true
   },
   {
     icon: <MessageQuestion />,
     title: 'Developer FAQs',
     subtext: 'Frequently asked questions',
+    link: false,
+    available: false
   },
   {
     icon: <Headphone />,
     title: 'Developer Support',
     subtext: 'For questions, issues and help',
+    link: '',
+    available: true
   },
   {
     icon: <Feed />,
     title: 'Data Feed Explorer',
     subtext: 'Explore the current status of the network',
+    link: false,
+    available: false
   },
   {
     icon: <Github />,
     title: 'GitHub Repo',
     subtext: 'Explore the codebase',
+    link: 'https://github.com/KlayOracle',
+    available: true
+  },
+  {
+    icon: <TableDocument />,
+    title: 'The DigiOracle Manifesto',
+    subtext: 'Learn more about how DigiOracle works',
+    link: false,
+    available: false
+  }
+];
+
+export const ecoresources = [
+  {
+    icon: <DocumentText />,
+    title: 'Documentation',
+    subtext: 'Dive into the docs',
+  },
+  {
+    icon: <Feed />,
+    title: 'Data Feed Explorer',
+    subtext: 'Explore the current status of the network',
   },
   {
     icon: <TableDocument />,
