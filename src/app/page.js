@@ -229,7 +229,7 @@ export default function Home() {
                         Modular Architecture
                       </h4>
                       <p className="text-[#DBDBDB] text-base">
-                        DigiOracle's highly modular design maximizes network
+                        DigiOracle&apos;s highly modular design maximizes network
                         efficiency by separating network components such as data
                         providers and nodes, and enabling them independently
                         from each other, ensuring optimal resource utilization
