@@ -5,7 +5,9 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { resources, ecoresources } from '../utils/data';
-import { ArrowCircleRight2, DocumentText } from 'iconsax-react';
+import { ArrowCircleRight2, Blend, Box1, DocumentText } from 'iconsax-react';
+import Network from '../components/Icons/Network';
+import Database from '../components/Icons/Database';
 
 // export async function generateMetadata({ params }) {
 //   return {
@@ -57,18 +59,18 @@ const Ecosystem = () => {
               </h2>
             </div>
 
-            <div className="pt-4 ">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-8 px-4 md:px-8">
-                <div className="md:px-5 py-6 flex items-start justify-start gap-7">
+            <div className="pt-4 relative">
+              <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 px-4 md:px-8 relative">
+                <div className="md:px-5 lg:pr-20 py-6 flex items-start justify-start gap-7">
                   <div className="hidden md:flex items-start justify-start h-14 w-14 mb-4">
                     <span className="rounded-full p-3 border border-[#484747]">
-                      <DocumentText />
+                      <Box1 />
                     </span>
                   </div>
-                  <div className="text-left pb-12">
+                  <div className="text-left pb-12 border-b border-[#353535]">
                     <h4 className="text-xl mb-3 text-[#FFF]">Data Sources</h4>
                     <div className="flex flex-col gap-2">
-                      <p className="text-[#DBDBDB] text-base md:h-32">
+                      <p className="text-[#DBDBDB] text-base lg:h-32">
                         As the name suggests, these are verifiable entities that
                         provide real-world data through APIs, hardware, and
                         other channels. DigiOracle uses various methods to
@@ -85,16 +87,16 @@ const Ecosystem = () => {
                   </div>
                 </div>
 
-                <div className="md:px-5 py-6 flex items-start justify-start gap-7">
+                <div className="md:px-5 lg:pr-20 py-6 flex items-start justify-start gap-7">
                   <div className="hidden md:flex items-start justify-start h-14 w-14 mb-4">
                     <span className="rounded-full p-3 border border-[#484747]">
-                      <DocumentText />
+                      <Database />
                     </span>
                   </div>
-                  <div className="text-left pb-12">
+                  <div className="text-left pb-12  border-b border-[#353535]">
                     <h4 className="text-xl mb-3 text-[#FFF]">Data Providers</h4>
                     <div className="flex flex-col gap-2">
-                      <p className="text-[#DBDBDB] text-base md:h-32">
+                      <p className="text-[#DBDBDB] text-base lg:h-32">
                         Data providers are responsible for subscribing to data
                         sources and configuring data feeds and Oracle contracts
                         accessible to end users.
@@ -110,16 +112,20 @@ const Ecosystem = () => {
                   </div>
                 </div>
 
-                <div className="md:px-5 py-6 flex items-start justify-start gap-7">
+                <div className="absolute top-1/2 left-1/2  h-1/2  border-[0.25px] border-[#353535] transform -translate-x-1/2 -translate-y-1/2 -z-10 hidden lg:block"></div>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8 px-4 md:px-8 relative">
+                <div className="md:px-5 lg:pr-20 py-6 flex items-start justify-start gap-7">
                   <div className="hidden md:flex items-start justify-start h-14 w-14 mb-4">
                     <span className="rounded-full p-3 border border-[#484747]">
-                      <DocumentText />
+                      <Network />
                     </span>
                   </div>
-                  <div className="text-left pb-12">
+                  <div className="text-left pb-12 border-b border-[#353535] lg:border-none">
                     <h4 className="text-xl mb-3 text-[#FFF]">Nodes</h4>
                     <div className="flex flex-col gap-2">
-                      <p className="text-[#DBDBDB] text-base md:h-32">
+                      <p className="text-[#DBDBDB] text-base lg:h-32">
                         Nodes on DigiOracle are responsible for handling
                         computational tasks on behalf of data providers,
                         including data retrieval, filtering, and aggregation.
@@ -135,16 +141,16 @@ const Ecosystem = () => {
                   </div>
                 </div>
 
-                <div className="md:px-5 py-6 flex items-start justify-start gap-7">
+                <div className="md:px-5 lg:pr-20 py-6 flex items-start justify-start gap-7">
                   <div className="hidden md:flex items-start justify-start h-14 w-14 mb-4">
                     <span className="rounded-full p-3 border border-[#484747]">
-                      <DocumentText />
+                      <Blend />
                     </span>
                   </div>
-                  <div className="text-left pb-12">
+                  <div className="text-left pb-12 border-b border-[#353535] lg:border-none">
                     <h4 className="text-xl mb-3 text-[#FFF]">Data Consumers</h4>
                     <div className="flex flex-col gap-2">
-                      <p className="text-[#DBDBDB] text-base md:h-32">
+                      <p className="text-[#DBDBDB] text-base lg:h-32">
                         Also known as subscribers, these are end users who make
                         use of external data within their smart contracts and
                         decentralized applications.
@@ -159,7 +165,17 @@ const Ecosystem = () => {
                     </div>
                   </div>
                 </div>
+
+                <div className="absolute top-1/2 left-1/2  h-1/2 border-[0.25px] border-[#353535] transform -translate-x-1/2 -translate-y-1/2 -z-10 hidden lg:block"></div>
               </div>
+              <Image
+                src="/images/Ellipse 13 (1).png"
+                height={500}
+                width={500}
+                className="rounded-3xl absolute left-1/2 top-1/2 pointer-events-none object-contain object-center transform -translate-x-1/2 -translate-y-1/2 z-10 hidden lg:block"
+                alt="Waiau"
+                loading={'lazy'}
+              />
             </div>
           </div>
         </div>
@@ -202,7 +218,7 @@ const Ecosystem = () => {
         </div>
       </section>
 
-      <section className="py-[5rem] sec_026">
+      {/* <section className="py-[5rem] sec_026">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9 flex flex-col gap-4 pb-4">
@@ -302,7 +318,7 @@ const Ecosystem = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="px-4 sec_023 py-[5rem]">
         <div className="rounded-3xl bg-[#0D1A1A] container mx-auto max-w-7xl relative h-full w-full block">
@@ -312,7 +328,8 @@ const Ecosystem = () => {
                 Become a Data Provider
               </h2>
               <p className="text-lg text-white font-light">
-                Join us in becoming a data provider for our ecosystem
+                Power the DigiOracle network - provide data feeds for smart
+                contracts, and earn while doing so!
               </p>
             </div>
 

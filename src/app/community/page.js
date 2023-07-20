@@ -37,6 +37,12 @@ const Community = () => {
       <section className="py-[5rem] sec_022">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
+            <div className="mb-12">
+              <h2 className="text-center font-semibold font-michroma text-[40px] text-white">
+              Community Resources
+              </h2>
+            </div>
+
             <div className="pt-4 px-3">
               <div className="grid grid-cols-1 gap-x-5 gap-y-8">
                 {/* {community?.map((item, i) => (

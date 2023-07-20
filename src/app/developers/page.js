@@ -127,7 +127,7 @@ const Developers = () => {
         </div>
       </section>
 
-      <section className="py-[5rem]sec_026">
+      {/* <section className="py-[5rem]sec_026">
         <div className="container mx-auto px-3 lg:px-6 max-w-7xl w-full">
           <div className="py-5">
             <div className="mb-9 flex flex-col gap-4 pb-4">
@@ -227,7 +227,7 @@ const Developers = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <div className="px-4 sec_023 py-[5rem]">
         <div className="rounded-3xl bg-[#0D1A1A] container mx-auto max-w-7xl relative h-full w-full block">

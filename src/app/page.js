@@ -229,11 +229,11 @@ export default function Home() {
                         Modular Architecture
                       </h4>
                       <p className="text-[#DBDBDB] text-base">
-                        DigiOracle&apos;s highly modular design maximizes network
-                        efficiency by separating network components such as data
-                        providers and nodes, and enabling them independently
-                        from each other, ensuring optimal resource utilization
-                        for secure and reliable off-chain data connectivity.
+                        DigiOracle&apos;s highly modular design maximizes
+                        network efficiency by separating network components such
+                        as data providers and nodes, and enabling them
+                        independently, ensuring optimal resource utilization for
+                        secure and reliable off-chain data connectivity.
                       </p>
                     </div>
                   </div>
@@ -249,10 +249,10 @@ export default function Home() {
                         Minimalism and ease of use
                       </h4>
                       <p className="text-[#DBDBDB] text-base">
-                        Designed for compatibility with all EVM-supported chains
-                        and tooling. DigiOracle does the heavy lifting of data
-                        sourcing, to aggregation, to providing them securely in
-                        formats that can be easily integrated within your smart
+                        Designed for compatibility with all EVM chains,
+                        DigiOracle does the heavy lifting of data sourcing,
+                        aggregation, and providing this data in formats that can
+                        be easily integrated within EVM-compatible smart
                         contracts.
                       </p>
                     </div>
@@ -340,9 +340,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-[5rem] bg-[#131414]">
+        <section className="py-[2rem] bg-[#131414]">
           <div className="container mx-auto max-w-7xl py-12 px-5 md:py-20 md:px-20 ">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 items-center space-y-3">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4 items-start space-y-3">
               <div className="flex flex-col gap-4">
                 <div>
                   <div className="flex items-center justify-center md:justify-start mb-3">
@@ -363,12 +363,22 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="h-[250px] md:h-[350px] w-100 block relative">
+              <div className="relative h-full w-auto">
+                <div className="h-[250px] md:h-[350px] w-100 block relative z-10">
+                  <Image
+                    src="/images/Device - Macbook Pro.png"
+                    fill
+                    className="object-cover"
+                    alt="Device-Macbook-Pro"
+                    loading={'lazy'}
+                  />
+                </div>
                 <Image
-                  src="/images/Device - Macbook Pro.png"
-                  fill
-                  className="object-cover"
-                  alt="Device-Macbook-Pro"
+                  src="/images/bq (1).png"
+                  height={900}
+                  width={800}
+                  className="object-cover absolute top-0 left-0 object-center "
+                  alt="bg"
                   loading={'lazy'}
                 />
               </div>

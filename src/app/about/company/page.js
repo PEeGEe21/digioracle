@@ -16,16 +16,24 @@ const Company = () => {
             <div className="">
               <div className="mb-5">
                 <h1 className="font-michroma text-[34px] md:text-[56px] leading-[49px] md:leading-[79px] font-medium text-white">
-                  The Primer
+                  The Company
                 </h1>
               </div>
             </div>
           </div>
         </div>
+
+        <Image
+          src="/images/rm373-506 1.png"
+          className="w-full object-cover object-center -z-10"
+          fill
+          alt="heroimg"
+          loading={'lazy'}
+        />
       </section>
       {/* </div> */}
 
-      <div className="px-4 sec_053">
+      <div className="px-4 sec_053 py-[5rem]">
         <div className="rounded-3xl bg container mx-auto max-w-4xl relative h-full w-full block">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-4  py-12 px-5 md:py-20 md:px-20">
             <div className="flex flex-col gap-4 text-center md:text-left z-10">
@@ -33,9 +41,10 @@ const Company = () => {
                 The Mission
               </h2>
               <p className="text-lg text-white font-light">
-                Data providers are responsible for subscribing to data sources
-                and configuring data feeds and Oracle contracts accessible to
-                end users.
+                At DigiOracle, our mission is to enable the adoption of
+                real-world use cases in the Web3 ecosystem by providing a highly
+                modular blockchain oracle that securely connects decentralized
+                applications with real-world events, data, and assets.
               </p>
             </div>
           </div>
@@ -60,16 +69,19 @@ const Company = () => {
 
             <div className="pt-4 px-3">
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-5 gap-y-8">
-                <div className="card border border-[#2C2929] p-5 backdrop-filter backdrop-blur-xs rounded-lg">
+                <Link
+                  href="https://klayoracle.com"
+                  className="card border border-[#2C2929] p-5 backdrop-filter backdrop-blur-xs rounded-lg relative"
+                >
                   <div className="text-left mt-4 py-2">
                     <h4 className="text-xl mb-3 text-[#FFF]">Klay Oracle</h4>
 
                     <p className="text-[#DBDBDB] text-base">
-                      Commodo sit leo enim nulla porta. Tellus fermentum
-                      hendrerit tempor vulputate dictumst.
+                      Integrate real-world events, data and assets into Klaytn
+                      smart contracts.
                     </p>
 
-                    <div className="mt-4 py-2">
+                    {/* <div className="mt-4 py-2">
                       <Link
                         href="/"
                         className="btn px-6 py-3 text-white bg-[#11A97D] rounded-md inline-flex gap-4 justify-center items-center"
@@ -77,19 +89,33 @@ const Company = () => {
                         Coming soon
                         <ArrowCircleRight2 className="arrow" />
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
-                </div>
-                <div className="card border border-[#2C2929] p-5 backdrop-filter backdrop-blur-xs rounded-lg">
+                  <div className="flex items-center justify-center md:justify-start mb-3 absolute top-3 right-3">
+                    <span className="text-[#0C0F0E] text-xs font-light rounded-3xl bg-[#BAFBE8] px-3 py-1 ">
+                      Live
+                    </span>
+                  </div>
+                </Link>
+                <Link
+                  href="#"
+                  className="card border border-[#2C2929] p-5 backdrop-filter backdrop-blur-xs rounded-lg relative"
+                >
                   <div className="text-left mt-4 py-2">
                     <h4 className="text-xl mb-3 text-[#FFF]">Celo Oracle</h4>
 
                     <p className="text-[#DBDBDB] text-base">
-                      Commodo sit leo enim nulla porta. Tellus fermentum
-                      hendrerit tempor vulputate dictumst.
+                      Integrate real-world events, data and assets into Celo
+                      smart contracts.
                     </p>
 
-                    <div className="mt-4 py-2">
+                    <div className="flex items-center justify-center md:justify-start mb-3 absolute top-3 right-3">
+                      <span className="text-[#0C0F0E] text-xs font-light rounded-3xl bg-[#BAFBE8] px-3 py-1 ">
+                        coming soon
+                      </span>
+                    </div>
+
+                    {/* <div className="mt-4 py-2">
                       <Link
                         href="/"
                         className="btn px-6 py-3 text-white bg-[#11A97D] rounded-md inline-flex gap-4 justify-center items-center"
@@ -97,19 +123,22 @@ const Company = () => {
                         Coming soon
                         <ArrowCircleRight2 className="arrow" />
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
-                </div>
-                <div className="card border border-[#2C2929] p-5 backdrop-filter backdrop-blur-xs rounded-lg">
+                </Link>
+                <Link
+                  href="#"
+                  className="card border border-[#2C2929] p-5 backdrop-filter backdrop-blur-xs rounded-lg relative"
+                >
                   <div className="text-left mt-4 py-2">
                     <h4 className="text-xl mb-3 text-[#FFF]">Venom Oracle</h4>
 
                     <p className="text-[#DBDBDB] text-base">
-                      Commodo sit leo enim nulla porta. Tellus fermentum
-                      hendrerit tempor vulputate dictumst.
+                      Integrate real-world events, data and assets into Venom
+                      smart contracts.
                     </p>
 
-                    <div className="mt-4 py-2">
+                    {/* <div className="mt-4 py-2">
                       <Link
                         href="/"
                         className="btn px-6 py-3 text-white bg-[#11A97D] rounded-md inline-flex gap-4 justify-center items-center"
@@ -117,9 +146,14 @@ const Company = () => {
                         Coming soon
                         <ArrowCircleRight2 className="arrow" />
                       </Link>
-                    </div>
+                    </div> */}
                   </div>
-                </div>
+                  <div className="flex items-center justify-center md:justify-start mb-3 absolute top-3 right-3">
+                    <span className="text-[#0C0F0E] text-xs font-light rounded-3xl bg-[#BAFBE8] px-3 py-1 ">
+                      coming soon
+                    </span>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
